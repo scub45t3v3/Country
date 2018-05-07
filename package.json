@@ -25,6 +25,9 @@
     "lint": "grunt coffeelint",
     "build": "grunt"
   },
+  "engines": {
+    "node": ">= 6"
+  },
   "devDependencies": {
     "coffeelint": "^2.1.0",
     "grunt": "^1.0.2",
