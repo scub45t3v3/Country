@@ -33,7 +33,7 @@ npm install Country
 Static method to retrieve and build a Country object from the iso2Code
 
 **arguments:**
-  1. `code: string`
+1. `code: string`
 
 **returns:** Country | false
 
@@ -50,7 +50,7 @@ let nonExistant = Country.getByIso2Code('AA'); // false
 Static method to retrieve and build a Country object from the iso3Code
 
 **arguments:**
-  1. `code: string`
+1. `code: string`
 
 **returns:** Country | false
 
@@ -67,7 +67,7 @@ let nonExistant = Country.getByIso3Code('AAA'); // false
 Static method to retrieve and build a Country object from the isoNumericCode
 
 **arguments:**
-  1. `code: string`
+1. `code: string`
 
 **returns:** Country | false
 
@@ -78,13 +78,13 @@ let country = Country.getByIsoNumericCode('840'); // Country
 let nonExistant = Country.getByIsoNumericCode('000'); // false
 ```
 
-### `Country.getByPostalCode(code: string): Country[] | false`
+### `Country.getByPostalCode(code: ?string): Country[] | false`
 **Added in:** v1.0.0
 
 Static method to retrieve and build an array of Country objects who match the given postal code
 
 **arguments:**
-  1. `code: string`
+1. `code: string`
 
 **returns:** Country[] | false
 
@@ -95,13 +95,13 @@ let country = Country.getByPostalCode('11111'); // Country[]
 let nonExistant = Country.getByPostalCode('this is going to return false'); // false
 ```
 
-### `Country.getByCallingCode(code: string): Country[] | false`
+### `Country.getByCallingCode(code: ?string): Country[] | false`
 **Added in:** v1.0.0
 
 Static method to retrieve and build an array of Country objects who match the given calling code
 
 **arguments:**
-  1. `code: string`
+1. `code: string`
 
 **returns:** Country[] | false
 
@@ -118,13 +118,13 @@ let nonExistant = Country.getByCallingCode('99999999999999'); // false
 Country class constructor
 
 **arguments:**
-  1. `properties: object = {}`
-    * `name: ?string`
-    * `iso2Code: ?string`
-    * `iso3Code: ?string`
-    * `isoNumericCode: ?string`
-    * `postalCodeRegEx: ?regexp`
-    * `callingCode: ?string | string[]`
+1. `properties: object = {}`
+    - `name: string | null | undefined`
+    - `iso2Code: string | null | undefined`
+    - `iso3Code: string | null | undefined`
+    - `isoNumericCode: string | null | undefined`
+    - `postalCodeRegEx: regexp | null | undefined`
+    - `callingCode: string | string[] | null | undefined`
 
 **returns:** Country
 
@@ -146,7 +146,7 @@ let country = Country();
 #### `Country.VERSION: string`
 **Added in:** v1.0.0
 
-Semantic version number
+Semantic version number of class definition
 
 **returns:** string
 
@@ -199,7 +199,7 @@ country.getName(); // 'Petoria'
 Setter method for name property
 
 **arguments:**
-  1. `name: string | undefined | null`
+1. `name: string | undefined | null`
 
 **returns:** Country
 
@@ -257,7 +257,7 @@ country.getIso2Code(); // 'FG'
 Setter method for iso2Code property
 
 **arguments:**
-  1. `code: string | undefined | null`
+1. `code: string | undefined | null`
 
 **returns:** Country
 
@@ -315,7 +315,7 @@ country.getIso3Code(); // 'GUY'
 Setter method for iso3Code property
 
 **arguments:**
-  1. `code: string | undefined | null`
+1. `code: string | undefined | null`
 
 **returns:** Country
 
@@ -373,7 +373,7 @@ country.getIsoNumericCode(); // '999'
 Setter method for isoNumericCode property
 
 **arguments:**
-  1. `code: string | undefined | null`
+1. `code: string | undefined | null`
 
 **returns:** Country
 
@@ -431,7 +431,7 @@ country.getPostalCodeRegEx(); // /^\d{5}$/;
 Setter method for postalCodeRegEx property
 
 **arguments:**
-  1. `code: regexp | undefined | null`
+1. `code: regexp | undefined | null`
 
 **returns:** Country
 
@@ -492,13 +492,13 @@ country.callingCode = null;
 country.getCallingCode(); // null
 ```
 
-#### `Country.setCallingCode(code: ?...string | string[] | undefined | null): Country`
+#### `Country.setCallingCode(code: ?...string | string[]): Country`
 **Added in:** v1.0.0
 
 Setter method for callingCode property
 
 **arguments:**
-  1. `code: ...string | string[] | undefined | null`
+1. `code: ...string | string[] | undefined | null`
 
 **returns:** Country
 
@@ -515,13 +515,13 @@ country
   .setCallingCode(5, [6, 9], [1], '4 5'); // ['+5', '+6' '+9', '+1', '+4 5']
 ```
 
-#### `Country.addCallingCode(code: ?...string | string[] | undefined | null): Country`
+#### `Country.addCallingCode(code: ?...string | string[]): Country`
 **Added in:** v1.0.0
 
 Method to append calling code(s) onto the callingCode property
 
 **arguments:**
-  1. `code: ...string | string[] | undefined | null`
+1. `code: ...string | string[] | undefined | null`
 
 **returns:** Country
 
@@ -544,7 +544,7 @@ country
 Method to remove calling code(s) from the callingCode property
 
 **arguments:**
-  1. `code: ...string | string[] | undefined | null`
+1. `code: ...string | string[] | undefined | null`
 
 **returns:** Country
 
@@ -567,7 +567,7 @@ country.removeCallingCode(1, 5, '+6 7'); // undefined
 Method to check if the given calling code is set for the country
 
 **arguments:**
-  1. `code: string | undefined | null`
+1. `code: string | undefined | null`
 
 **returns:** boolean
 
@@ -592,7 +592,7 @@ country.hasCallingCode(5); // true
 Method to check if all the given calling codes are set for the country
 
 **arguments:**
-  1. `code: ...string | string[] | undefined | null`
+1. `code: ...string | string[] | undefined | null`
 
 **returns:** Country
 
@@ -629,7 +629,7 @@ country.hasAllCallingCodes(1, [5, 9], '6 7'); // true
 Method to check if any of the given calling codes are set for the country
 
 **arguments:**
-  1. `code: ...string | string[] | undefined | null`
+1. `code: ...string | string[] | undefined | null`
 
 **returns:** Country
 
@@ -666,7 +666,7 @@ country.hasAnyCallingCodes([2, 3], '6 7'); // true
 Method to create an object literal containing the set properties
 
 **arguments:**
-  1. `code: ...string | string[] | undefined | null`
+1. `code: ...string | string[] | undefined | null`
 
 **returns:** object
 
@@ -687,13 +687,13 @@ country.get('iso2Code', ['iso3Code', 'callingCode'], 'isoNumericCode'); // {iso2
 Method to bulk set properties on the country
 
 **arguments:**
-  1. `properties: object = {}`
-    * `name: ?string`
-    * `iso2Code: ?string`
-    * `iso3Code: ?string`
-    * `isoNumericCode: ?string`
-    * `postalCodeRegEx: ?regexp`
-    * `callingCode: ?string | string[]`
+1. `properties: object = {}`
+    - `name: string | null | undefined`
+    - `iso2Code: string | null | undefined`
+    - `iso3Code: string | null | undefined`
+    - `isoNumericCode: string | null | undefined`
+    - `postalCodeRegEx: regexp | null | undefined`
+    - `callingCode: string | string[] | null | undefined`
 
 **returns:** Country
 
@@ -712,7 +712,7 @@ country.set({name: 'Petoria', iso2Code: 'FG', iso3Code: 'GUY'});
 Method to check if the given postal code is valid for the country
 
 **arguments:**
-  1. `code: string | undefined | null`
+1. `code: string | undefined | null`
 
 **returns:** boolean
 
