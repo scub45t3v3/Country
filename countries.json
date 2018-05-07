@@ -1,0 +1,1994 @@
+[
+  {
+    "name": "Afghanistan",
+    "iso2Code": "AF",
+    "iso3Code": "AFG",
+    "isoNumericCode": "004",
+    "postalCodeRegEx": null,
+    "callingCode": "93"
+  },
+  {
+    "name": "Åland Islands",
+    "iso2Code": "AX",
+    "iso3Code": "ALA",
+    "isoNumericCode": "248",
+    "postalCodeRegEx": "22[0-9]{3}",
+    "callingCode": "358 18"
+  },
+  {
+    "name": "Albania",
+    "iso2Code": "AL",
+    "iso3Code": "ALB",
+    "isoNumericCode": "008",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "355"
+  },
+  {
+    "name": "Algeria",
+    "iso2Code": "DZ",
+    "iso3Code": "DZA",
+    "isoNumericCode": "012",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "213"
+  },
+  {
+    "name": "American Samoa",
+    "iso2Code": "AS",
+    "iso3Code": "ASM",
+    "isoNumericCode": "016",
+    "postalCodeRegEx": "[0-9]{5}(?:-?[0-9]{4})?",
+    "callingCode": "1 684"
+  },
+  {
+    "name": "Andorra",
+    "iso2Code": "AD",
+    "iso3Code": "AND",
+    "isoNumericCode": "020",
+    "postalCodeRegEx": "AD[1-7]0[0-1]",
+    "callingCode": "376"
+  },
+  {
+    "name": "Angola",
+    "iso2Code": "AO",
+    "iso3Code": "AGO",
+    "isoNumericCode": "024",
+    "postalCodeRegEx": null,
+    "callingCode": "244"
+  },
+  {
+    "name": "Anguilla",
+    "iso2Code": "AI",
+    "iso3Code": "AIA",
+    "isoNumericCode": "660",
+    "postalCodeRegEx": null,
+    "callingCode": "1 264"
+  },
+  {
+    "name": "Antarctica",
+    "iso2Code": "AQ",
+    "iso3Code": "ATA",
+    "isoNumericCode": "010",
+    "postalCodeRegEx": null,
+    "callingCode": null
+  },
+  {
+    "name": "Antigua and Barbuda",
+    "iso2Code": "AG",
+    "iso3Code": "ATG",
+    "isoNumericCode": "028",
+    "postalCodeRegEx": null,
+    "callingCode": "1 268"
+  },
+  {
+    "name": "Argentina",
+    "iso2Code": "AR",
+    "iso3Code": "ARG",
+    "isoNumericCode": "032",
+    "postalCodeRegEx": "[A-Z][0-9]{4}[A-Z]{3}",
+    "callingCode": "54"
+  },
+  {
+    "name": "Armenia",
+    "iso2Code": "AM",
+    "iso3Code": "ARM",
+    "isoNumericCode": "051",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "374"
+  },
+  {
+    "name": "Aruba",
+    "iso2Code": "AW",
+    "iso3Code": "ABW",
+    "isoNumericCode": "533",
+    "postalCodeRegEx": null,
+    "callingCode": "297"
+  },
+  {
+    "name": "Australia",
+    "iso2Code": "AU",
+    "iso3Code": "AUS",
+    "isoNumericCode": "036",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "61"
+  },
+  {
+    "name": "Austria",
+    "iso2Code": "AT",
+    "iso3Code": "AUT",
+    "isoNumericCode": "040",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "43"
+  },
+  {
+    "name": "Azerbaijan",
+    "iso2Code": "AZ",
+    "iso3Code": "AZE",
+    "isoNumericCode": "031",
+    "postalCodeRegEx": "AZ[ ]*[0-9]{4}",
+    "callingCode": "994"
+  },
+  {
+    "name": "Bahamas",
+    "iso2Code": "BS",
+    "iso3Code": "BHS",
+    "isoNumericCode": "044",
+    "postalCodeRegEx": null,
+    "callingCode": "1 242"
+  },
+  {
+    "name": "Bahrain",
+    "iso2Code": "BH",
+    "iso3Code": "BHR",
+    "isoNumericCode": "048",
+    "postalCodeRegEx": null,
+    "callingCode": "973"
+  },
+  {
+    "name": "Bangladesh",
+    "iso2Code": "BD",
+    "iso3Code": "BGD",
+    "isoNumericCode": "050",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "880"
+  },
+  {
+    "name": "Barbados",
+    "iso2Code": "BB",
+    "iso3Code": "BRB",
+    "isoNumericCode": "052",
+    "postalCodeRegEx": "BB[0-9]{5}",
+    "callingCode": "1 246"
+  },
+  {
+    "name": "Belarus",
+    "iso2Code": "BY",
+    "iso3Code": "BLR",
+    "isoNumericCode": "112",
+    "postalCodeRegEx": "[0-9]{6}",
+    "callingCode": "375"
+  },
+  {
+    "name": "Belgium",
+    "iso2Code": "BE",
+    "iso3Code": "BEL",
+    "isoNumericCode": "056",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "32"
+  },
+  {
+    "name": "Belize",
+    "iso2Code": "BZ",
+    "iso3Code": "BLZ",
+    "isoNumericCode": "084",
+    "postalCodeRegEx": null,
+    "callingCode": "501"
+  },
+  {
+    "name": "Benin",
+    "iso2Code": "BJ",
+    "iso3Code": "BEN",
+    "isoNumericCode": "204",
+    "postalCodeRegEx": null,
+    "callingCode": "229"
+  },
+  {
+    "name": "Bermuda",
+    "iso2Code": "BM",
+    "iso3Code": "BMU",
+    "isoNumericCode": "060",
+    "postalCodeRegEx": "[A-Z]{2}[ ]*(?:[0-9A-Z]){2}",
+    "callingCode": "1 441"
+  },
+  {
+    "name": "Bhutan",
+    "iso2Code": "BT",
+    "iso3Code": "BTN",
+    "isoNumericCode": "064",
+    "postalCodeRegEx": null,
+    "callingCode": "975"
+  },
+  {
+    "name": "Bolivia, Plurinational State of",
+    "iso2Code": "BO",
+    "iso3Code": "BOL",
+    "isoNumericCode": "068",
+    "postalCodeRegEx": null,
+    "callingCode": "591"
+  },
+  {
+    "name": "Bonaire",
+    "iso2Code": "BQ",
+    "iso3Code": "BES",
+    "isoNumericCode": "535",
+    "postalCodeRegEx": null,
+    "callingCode": "599 7"
+  },
+  {
+    "name": "Bosnia and Herzegovina",
+    "iso2Code": "BA",
+    "iso3Code": "BIH",
+    "isoNumericCode": "070",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "387"
+  },
+  {
+    "name": "Botswana",
+    "iso2Code": "BW",
+    "iso3Code": "BWA",
+    "isoNumericCode": "072",
+    "postalCodeRegEx": null,
+    "callingCode": "267"
+  },
+  {
+    "name": "Bouvet Island",
+    "iso2Code": "BV",
+    "iso3Code": "BVT",
+    "isoNumericCode": "074",
+    "postalCodeRegEx": null,
+    "callingCode": null
+  },
+  {
+    "name": "Brazil",
+    "iso2Code": "BR",
+    "iso3Code": "BRA",
+    "isoNumericCode": "076",
+    "postalCodeRegEx": "[0-9]{5}-?[0-9]{3}",
+    "callingCode": "55"
+  },
+  {
+    "name": "British Indian Ocean Territory",
+    "iso2Code": "IO",
+    "iso3Code": "IOT",
+    "isoNumericCode": "086",
+    "postalCodeRegEx": null,
+    "callingCode": "246"
+  },
+  {
+    "name": "Brunei Darussalam",
+    "iso2Code": "BN",
+    "iso3Code": "BRN",
+    "isoNumericCode": "096",
+    "postalCodeRegEx": "[A-Z]{2}[0-9]{4}",
+    "callingCode": "673"
+  },
+  {
+    "name": "Bulgaria",
+    "iso2Code": "BG",
+    "iso3Code": "BGR",
+    "isoNumericCode": "100",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "359"
+  },
+  {
+    "name": "Burkina Faso",
+    "iso2Code": "BF",
+    "iso3Code": "BFA",
+    "isoNumericCode": "854",
+    "postalCodeRegEx": null,
+    "callingCode": "226"
+  },
+  {
+    "name": "Burundi",
+    "iso2Code": "BI",
+    "iso3Code": "BDI",
+    "isoNumericCode": "108",
+    "postalCodeRegEx": null,
+    "callingCode": "257"
+  },
+  {
+    "name": "Cambodia",
+    "iso2Code": "KH",
+    "iso3Code": "KHM",
+    "isoNumericCode": "116",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "855"
+  },
+  {
+    "name": "Cameroon",
+    "iso2Code": "CM",
+    "iso3Code": "CMR",
+    "isoNumericCode": "120",
+    "postalCodeRegEx": null,
+    "callingCode": "237"
+  },
+  {
+    "name": "Canada",
+    "iso2Code": "CA",
+    "iso3Code": "CAN",
+    "isoNumericCode": "124",
+    "postalCodeRegEx": "[A-Z][0-9][A-Z][ ]*[0-9][A-Z][0-9]",
+    "callingCode": "1"
+  },
+  {
+    "name": "Cape Verde",
+    "iso2Code": "CV",
+    "iso3Code": "CPV",
+    "isoNumericCode": "132",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "238"
+  },
+  {
+    "name": "Cayman Islands",
+    "iso2Code": "KY",
+    "iso3Code": "CYM",
+    "isoNumericCode": "136",
+    "postalCodeRegEx": "KY[0-9]-?[0-9]{4}",
+    "callingCode": "1 345"
+  },
+  {
+    "name": "Central African Republic",
+    "iso2Code": "CF",
+    "iso3Code": "CAF",
+    "isoNumericCode": "140",
+    "postalCodeRegEx": null,
+    "callingCode": "236"
+  },
+  {
+    "name": "Chad",
+    "iso2Code": "TD",
+    "iso3Code": "TCD",
+    "isoNumericCode": "148",
+    "postalCodeRegEx": null,
+    "callingCode": "235"
+  },
+  {
+    "name": "Chile",
+    "iso2Code": "CL",
+    "iso3Code": "CHL",
+    "isoNumericCode": "152",
+    "postalCodeRegEx": "[0-9]{7}",
+    "callingCode": "56"
+  },
+  {
+    "name": "China",
+    "iso2Code": "CN",
+    "iso3Code": "CHN",
+    "isoNumericCode": "156",
+    "postalCodeRegEx": "[0-9]{6}",
+    "callingCode": "86"
+  },
+  {
+    "name": "Christmas Island",
+    "iso2Code": "CX",
+    "iso3Code": "CXR",
+    "isoNumericCode": "162",
+    "postalCodeRegEx": null,
+    "callingCode": "61 89164"
+  },
+  {
+    "name": "Cocos (Keeling) Islands",
+    "iso2Code": "CC",
+    "iso3Code": "CCK",
+    "isoNumericCode": "166",
+    "postalCodeRegEx": null,
+    "callingCode": "61 89162"
+  },
+  {
+    "name": "Colombia",
+    "iso2Code": "CO",
+    "iso3Code": "COL",
+    "isoNumericCode": "170",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "57"
+  },
+  {
+    "name": "Comoros",
+    "iso2Code": "KM",
+    "iso3Code": "COM",
+    "isoNumericCode": "174",
+    "postalCodeRegEx": null,
+    "callingCode": "269"
+  },
+  {
+    "name": "Congo",
+    "iso2Code": "CG",
+    "iso3Code": "COG",
+    "isoNumericCode": "178",
+    "postalCodeRegEx": null,
+    "callingCode": "242"
+  },
+  {
+    "name": "Congo, Democratic Republic",
+    "iso2Code": "CD",
+    "iso3Code": "COD",
+    "isoNumericCode": "180",
+    "postalCodeRegEx": null,
+    "callingCode": "243"
+  },
+  {
+    "name": "Cook Islands",
+    "iso2Code": "CK",
+    "iso3Code": "COK",
+    "isoNumericCode": "184",
+    "postalCodeRegEx": null,
+    "callingCode": "682"
+  },
+  {
+    "name": "Costa Rica",
+    "iso2Code": "CR",
+    "iso3Code": "CRI",
+    "isoNumericCode": "188",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "506"
+  },
+  {
+    "name": "Côte d'Ivoire",
+    "iso2Code": "CI",
+    "iso3Code": "CIV",
+    "isoNumericCode": "384",
+    "postalCodeRegEx": null,
+    "callingCode": "225"
+  },
+  {
+    "name": "Croatia",
+    "iso2Code": "HR",
+    "iso3Code": "HRV",
+    "isoNumericCode": "191",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "385"
+  },
+  {
+    "name": "Cuba",
+    "iso2Code": "CU",
+    "iso3Code": "CUB",
+    "isoNumericCode": "192",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "53"
+  },
+  {
+    "name": "Curaçao",
+    "iso2Code": "CW",
+    "iso3Code": "CUW",
+    "isoNumericCode": "531",
+    "postalCodeRegEx": null,
+    "callingCode": "599 9"
+  },
+  {
+    "name": "Cyprus",
+    "iso2Code": "CY",
+    "iso3Code": "CYP",
+    "isoNumericCode": "196",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "357"
+  },
+  {
+    "name": "Czech Republic",
+    "iso2Code": "CZ",
+    "iso3Code": "CZE",
+    "isoNumericCode": "203",
+    "postalCodeRegEx": "[0-9]{3}[ ]*[0-9]{2}",
+    "callingCode": "420"
+  },
+  {
+    "name": "Denmark",
+    "iso2Code": "DK",
+    "iso3Code": "DNK",
+    "isoNumericCode": "208",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "45"
+  },
+  {
+    "name": "Djibouti",
+    "iso2Code": "DJ",
+    "iso3Code": "DJI",
+    "isoNumericCode": "262",
+    "postalCodeRegEx": null,
+    "callingCode": "253"
+  },
+  {
+    "name": "Dominica",
+    "iso2Code": "DM",
+    "iso3Code": "DMA",
+    "isoNumericCode": "212",
+    "postalCodeRegEx": null,
+    "callingCode": "1 767"
+  },
+  {
+    "name": "Dominican Republic",
+    "iso2Code": "DO",
+    "iso3Code": "DOM",
+    "isoNumericCode": "214",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": ["1 809", "1 829", "1 849"]
+  },
+  {
+    "name": "Ecuador",
+    "iso2Code": "EC",
+    "iso3Code": "ECU",
+    "isoNumericCode": "218",
+    "postalCodeRegEx": "[0-9]{6}",
+    "callingCode": "593"
+  },
+  {
+    "name": "Egypt",
+    "iso2Code": "EG",
+    "iso3Code": "EGY",
+    "isoNumericCode": "818",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "20"
+  },
+  {
+    "name": "El Salvador",
+    "iso2Code": "SV",
+    "iso3Code": "SLV",
+    "isoNumericCode": "222",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "503"
+  },
+  {
+    "name": "Equatorial Guinea",
+    "iso2Code": "GQ",
+    "iso3Code": "GNQ",
+    "isoNumericCode": "226",
+    "postalCodeRegEx": null,
+    "callingCode": "240"
+  },
+  {
+    "name": "Eritrea",
+    "iso2Code": "ER",
+    "iso3Code": "ERI",
+    "isoNumericCode": "232",
+    "postalCodeRegEx": null,
+    "callingCode": "291"
+  },
+  {
+    "name": "Estonia",
+    "iso2Code": "EE",
+    "iso3Code": "EST",
+    "isoNumericCode": "233",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "372"
+  },
+  {
+    "name": "Ethiopia",
+    "iso2Code": "ET",
+    "iso3Code": "ETH",
+    "isoNumericCode": "231",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "251"
+  },
+  {
+    "name": "Falkland Islands (Malvinas)",
+    "iso2Code": "FK",
+    "iso3Code": "FLK",
+    "isoNumericCode": "238",
+    "postalCodeRegEx": "FIQQ[ ]*1ZZ",
+    "callingCode": "500"
+  },
+  {
+    "name": "Faroe Islands",
+    "iso2Code": "FO",
+    "iso3Code": "FRO",
+    "isoNumericCode": "234",
+    "postalCodeRegEx": "[0-9]{3}",
+    "callingCode": "298"
+  },
+  {
+    "name": "Fiji",
+    "iso2Code": "FJ",
+    "iso3Code": "FJI",
+    "isoNumericCode": "242",
+    "postalCodeRegEx": null,
+    "callingCode": "679"
+  },
+  {
+    "name": "Finland",
+    "iso2Code": "FI",
+    "iso3Code": "FIN",
+    "isoNumericCode": "246",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "358"
+  },
+  {
+    "name": "France",
+    "iso2Code": "FR",
+    "iso3Code": "FRA",
+    "isoNumericCode": "250",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "33"
+  },
+  {
+    "name": "French Guiana",
+    "iso2Code": "GF",
+    "iso3Code": "GUF",
+    "isoNumericCode": "254",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "594"
+  },
+  {
+    "name": "French Polynesia",
+    "iso2Code": "PF",
+    "iso3Code": "PYF",
+    "isoNumericCode": "258",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "689"
+  },
+  {
+    "name": "French Southern Territories",
+    "iso2Code": "TF",
+    "iso3Code": "ATF",
+    "isoNumericCode": "260",
+    "postalCodeRegEx": null,
+    "callingCode": null
+  },
+  {
+    "name": "Gabon",
+    "iso2Code": "GA",
+    "iso3Code": "GAB",
+    "isoNumericCode": "266",
+    "postalCodeRegEx": null,
+    "callingCode": "241"
+  },
+  {
+    "name": "Gambia",
+    "iso2Code": "GM",
+    "iso3Code": "GMB",
+    "isoNumericCode": "270",
+    "postalCodeRegEx": null,
+    "callingCode": "220"
+  },
+  {
+    "name": "Georgia",
+    "iso2Code": "GE",
+    "iso3Code": "GEO",
+    "isoNumericCode": "268",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "995"
+  },
+  {
+    "name": "Germany",
+    "iso2Code": "DE",
+    "iso3Code": "DEU",
+    "isoNumericCode": "276",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "49"
+  },
+  {
+    "name": "Ghana",
+    "iso2Code": "GH",
+    "iso3Code": "GHA",
+    "isoNumericCode": "288",
+    "postalCodeRegEx": null,
+    "callingCode": "233"
+  },
+  {
+    "name": "Gibraltar",
+    "iso2Code": "GI",
+    "iso3Code": "GIB",
+    "isoNumericCode": "292",
+    "postalCodeRegEx": null,
+    "callingCode": "350"
+  },
+  {
+    "name": "Greece",
+    "iso2Code": "GR",
+    "iso3Code": "GRC",
+    "isoNumericCode": "300",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "30"
+  },
+  {
+    "name": "Greenland",
+    "iso2Code": "GL",
+    "iso3Code": "GRL",
+    "isoNumericCode": "304",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "299"
+  },
+  {
+    "name": "Grenada",
+    "iso2Code": "GD",
+    "iso3Code": "GRD",
+    "isoNumericCode": "308",
+    "postalCodeRegEx": null,
+    "callingCode": "1 473"
+  },
+  {
+    "name": "Guadeloupe",
+    "iso2Code": "GP",
+    "iso3Code": "GLP",
+    "isoNumericCode": "312",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "590"
+  },
+  {
+    "name": "Guam",
+    "iso2Code": "GU",
+    "iso3Code": "GUM",
+    "isoNumericCode": "316",
+    "postalCodeRegEx": "[0-9]{5}(?:-?[0-9]{4})?",
+    "callingCode": "1 671"
+  },
+  {
+    "name": "Guatemala",
+    "iso2Code": "GT",
+    "iso3Code": "GTM",
+    "isoNumericCode": "320",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "502"
+  },
+  {
+    "name": "Guernsey",
+    "iso2Code": "GG",
+    "iso3Code": "GGY",
+    "isoNumericCode": "831",
+    "postalCodeRegEx": "[A-Z]{1,2}[0-9][A-Z0-9]?[ -]?[0-9][A-Z]{2}",
+    "callingCode": ["44 1481", "44 7781", "44 7839", "447911"]
+  },
+  {
+    "name": "Guinea",
+    "iso2Code": "GN",
+    "iso3Code": "GIN",
+    "isoNumericCode": "324",
+    "postalCodeRegEx": null,
+    "callingCode": "224"
+  },
+  {
+    "name": "Guinea-Bissau",
+    "iso2Code": "GW",
+    "iso3Code": "GNB",
+    "isoNumericCode": "624",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "245"
+  },
+  {
+    "name": "Guyana",
+    "iso2Code": "GY",
+    "iso3Code": "GUY",
+    "isoNumericCode": "328",
+    "postalCodeRegEx": null,
+    "callingCode": "592"
+  },
+  {
+    "name": "Haiti",
+    "iso2Code": "HT",
+    "iso3Code": "HTI",
+    "isoNumericCode": "332",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "509"
+  },
+  {
+    "name": "Heard Island and McDonald Islands",
+    "iso2Code": "HM",
+    "iso3Code": "HMD",
+    "isoNumericCode": "334",
+    "postalCodeRegEx": null,
+    "callingCode": null
+  },
+  {
+    "name": "Holy See (Vatican City State)",
+    "iso2Code": "VA",
+    "iso3Code": "VAT",
+    "isoNumericCode": "336",
+    "postalCodeRegEx": "00120",
+    "callingCode": null
+  },
+  {
+    "name": "Honduras",
+    "iso2Code": "HN",
+    "iso3Code": "HND",
+    "isoNumericCode": "340",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "504"
+  },
+  {
+    "name": "Hong Kong",
+    "iso2Code": "HK",
+    "iso3Code": "HKG",
+    "isoNumericCode": "344",
+    "postalCodeRegEx": null,
+    "callingCode": "852"
+  },
+  {
+    "name": "Hungary",
+    "iso2Code": "HU",
+    "iso3Code": "HUN",
+    "isoNumericCode": "348",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "36"
+  },
+  {
+    "name": "Iceland",
+    "iso2Code": "IS",
+    "iso3Code": "ISL",
+    "isoNumericCode": "352",
+    "postalCodeRegEx": "[0-9]{3}",
+    "callingCode": "354"
+  },
+  {
+    "name": "India",
+    "iso2Code": "IN",
+    "iso3Code": "IND",
+    "isoNumericCode": "356",
+    "postalCodeRegEx": "[0-9]{6}",
+    "callingCode": "91"
+  },
+  {
+    "name": "Indonesia",
+    "iso2Code": "ID",
+    "iso3Code": "IDN",
+    "isoNumericCode": "360",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "62"
+  },
+  {
+    "name": "Iran",
+    "iso2Code": "IR",
+    "iso3Code": "IRN",
+    "isoNumericCode": "364",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "98"
+  },
+  {
+    "name": "Iraq",
+    "iso2Code": "IQ",
+    "iso3Code": "IRQ",
+    "isoNumericCode": "368",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "964"
+  },
+  {
+    "name": "Ireland",
+    "iso2Code": "IE",
+    "iso3Code": "IRL",
+    "isoNumericCode": "372",
+    "postalCodeRegEx": null,
+    "callingCode": "353"
+  },
+  {
+    "name": "Isle of Man",
+    "iso2Code": "IM",
+    "iso3Code": "IMN",
+    "isoNumericCode": "833",
+    "postalCodeRegEx": "IM[0-9]{2}[ ]*[0-9][A-Z]{2}",
+    "callingCode": ["44 1624", "44 7524", "44 7624", "44 7924"]
+  },
+  {
+    "name": "Israel",
+    "iso2Code": "IL",
+    "iso3Code": "ISR",
+    "isoNumericCode": "376",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "972"
+  },
+  {
+    "name": "Italy",
+    "iso2Code": "IT",
+    "iso3Code": "ITA",
+    "isoNumericCode": "380",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "39"
+  },
+  {
+    "name": "Jamaica",
+    "iso2Code": "JM",
+    "iso3Code": "JAM",
+    "isoNumericCode": "388",
+    "postalCodeRegEx": null,
+    "callingCode": "1 876"
+  },
+  {
+    "name": "Japan",
+    "iso2Code": "JP",
+    "iso3Code": "JPN",
+    "isoNumericCode": "392",
+    "postalCodeRegEx": "[0-9]{3}-?[0-9]{4}",
+    "callingCode": "81"
+  },
+  {
+    "name": "Jersey",
+    "iso2Code": "JE",
+    "iso3Code": "JEY",
+    "isoNumericCode": "832",
+    "postalCodeRegEx": "JE[0-9]{2}[ ]*[0-9][A-Z]{2}",
+    "callingCode": "44 1534"
+  },
+  {
+    "name": "Jordan",
+    "iso2Code": "JO",
+    "iso3Code": "JOR",
+    "isoNumericCode": "400",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "962"
+  },
+  {
+    "name": "Kazakhstan",
+    "iso2Code": "KZ",
+    "iso3Code": "KAZ",
+    "isoNumericCode": "398",
+    "postalCodeRegEx": "[0-9]{6}",
+    "callingCode": ["7 6", "7 7"]
+  },
+  {
+    "name": "Kenya",
+    "iso2Code": "KE",
+    "iso3Code": "KEN",
+    "isoNumericCode": "404",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "254"
+  },
+  {
+    "name": "Kiribati",
+    "iso2Code": "KI",
+    "iso3Code": "KIR",
+    "isoNumericCode": "296",
+    "postalCodeRegEx": null,
+    "callingCode": "686"
+  },
+  {
+    "name": "North Korea",
+    "iso2Code": "KP",
+    "iso3Code": "PRK",
+    "isoNumericCode": "408",
+    "postalCodeRegEx": null,
+    "callingCode": "850"
+  },
+  {
+    "name": "South Korea",
+    "iso2Code": "KR",
+    "iso3Code": "KOR",
+    "isoNumericCode": "410",
+    "postalCodeRegEx": "[0-9]{3}-?[0-9]{3}",
+    "callingCode": "82"
+  },
+  {
+    "name": "Kuwait",
+    "iso2Code": "KW",
+    "iso3Code": "KWT",
+    "isoNumericCode": "414",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "965"
+  },
+  {
+    "name": "Kyrgyzstan",
+    "iso2Code": "KG",
+    "iso3Code": "KGZ",
+    "isoNumericCode": "417",
+    "postalCodeRegEx": "[0-9]{6}",
+    "callingCode": "996"
+  },
+  {
+    "name": "Laos",
+    "iso2Code": "LA",
+    "iso3Code": "LAO",
+    "isoNumericCode": "418",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "856"
+  },
+  {
+    "name": "Latvia",
+    "iso2Code": "LV",
+    "iso3Code": "LVA",
+    "isoNumericCode": "428",
+    "postalCodeRegEx": "LV-?{0-9]{4}",
+    "callingCode": "371"
+  },
+  {
+    "name": "Lebanon",
+    "iso2Code": "LB",
+    "iso3Code": "LBN",
+    "isoNumericCode": "422",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "961"
+  },
+  {
+    "name": "Lesotho",
+    "iso2Code": "LS",
+    "iso3Code": "LSO",
+    "isoNumericCode": "426",
+    "postalCodeRegEx": "[0-9]{3}",
+    "callingCode": "266"
+  },
+  {
+    "name": "Liberia",
+    "iso2Code": "LR",
+    "iso3Code": "LBR",
+    "isoNumericCode": "430",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "231"
+  },
+  {
+    "name": "Libya",
+    "iso2Code": "LY",
+    "iso3Code": "LBY",
+    "isoNumericCode": "434",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "218"
+  },
+  {
+    "name": "Liechtenstein",
+    "iso2Code": "LI",
+    "iso3Code": "LIE",
+    "isoNumericCode": "438",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "423"
+  },
+  {
+    "name": "Lithuania",
+    "iso2Code": "LT",
+    "iso3Code": "LTU",
+    "isoNumericCode": "440",
+    "postalCodeRegEx": "LT-?[0-9]{4}",
+    "callingCode": "370"
+  },
+  {
+    "name": "Luxembourg",
+    "iso2Code": "LU",
+    "iso3Code": "LUX",
+    "isoNumericCode": "442",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "352"
+  },
+  {
+    "name": "Macao",
+    "iso2Code": "MO",
+    "iso3Code": "MAC",
+    "isoNumericCode": "446",
+    "postalCodeRegEx": null,
+    "callingCode": "853"
+  },
+  {
+    "name": "Macedonia",
+    "iso2Code": "MK",
+    "iso3Code": "MKD",
+    "isoNumericCode": "807",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "389"
+  },
+  {
+    "name": "Madagascar",
+    "iso2Code": "MG",
+    "iso3Code": "MDG",
+    "isoNumericCode": "450",
+    "postalCodeRegEx": "[0-9]{3}",
+    "callingCode": "261"
+  },
+  {
+    "name": "Malawi",
+    "iso2Code": "MW",
+    "iso3Code": "MWI",
+    "isoNumericCode": "454",
+    "postalCodeRegEx": null,
+    "callingCode": "265"
+  },
+  {
+    "name": "Malaysia",
+    "iso2Code": "MY",
+    "iso3Code": "MYS",
+    "isoNumericCode": "458",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "60"
+  },
+  {
+    "name": "Maldives",
+    "iso2Code": "MV",
+    "iso3Code": "MDV",
+    "isoNumericCode": "462",
+    "postalCodeRegEx": "[0-9]{2}-?[0-9]{2}",
+    "callingCode": "960"
+  },
+  {
+    "name": "Mali",
+    "iso2Code": "ML",
+    "iso3Code": "MLI",
+    "isoNumericCode": "466",
+    "postalCodeRegEx": null,
+    "callingCode": "223"
+  },
+  {
+    "name": "Malta",
+    "iso2Code": "MT",
+    "iso3Code": "MLT",
+    "isoNumericCode": "470",
+    "postalCodeRegEx": "[A-Z]{3}[ ]*[0-9]{3}",
+    "callingCode": "356"
+  },
+  {
+    "name": "Marshall Islands",
+    "iso2Code": "MH",
+    "iso3Code": "MHL",
+    "isoNumericCode": "584",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "692"
+  },
+  {
+    "name": "Martinique",
+    "iso2Code": "MQ",
+    "iso3Code": "MTQ",
+    "isoNumericCode": "474",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "596"
+  },
+  {
+    "name": "Mauritania",
+    "iso2Code": "MR",
+    "iso3Code": "MRT",
+    "isoNumericCode": "478",
+    "postalCodeRegEx": null,
+    "callingCode": "222"
+  },
+  {
+    "name": "Mauritius",
+    "iso2Code": "MU",
+    "iso3Code": "MUS",
+    "isoNumericCode": "480",
+    "postalCodeRegEx": null,
+    "callingCode": "230"
+  },
+  {
+    "name": "Mayotte",
+    "iso2Code": "YT",
+    "iso3Code": "MYT",
+    "isoNumericCode": "175",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": ["262 269", "262 639"]
+  },
+  {
+    "name": "Mexico",
+    "iso2Code": "MX",
+    "iso3Code": "MEX",
+    "isoNumericCode": "484",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "52"
+  },
+  {
+    "name": "Micronesia, Federated States of",
+    "iso2Code": "FM",
+    "iso3Code": "FSM",
+    "isoNumericCode": "583",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "691"
+  },
+  {
+    "name": "Moldova, Republic of",
+    "iso2Code": "MD",
+    "iso3Code": "MDA",
+    "isoNumericCode": "498",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "373"
+  },
+  {
+    "name": "Monaco",
+    "iso2Code": "MC",
+    "iso3Code": "MCO",
+    "isoNumericCode": "492",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "377"
+  },
+  {
+    "name": "Mongolia",
+    "iso2Code": "MN",
+    "iso3Code": "MNG",
+    "isoNumericCode": "496",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "976"
+  },
+  {
+    "name": "Montenegro",
+    "iso2Code": "ME",
+    "iso3Code": "MNE",
+    "isoNumericCode": "499",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "382"
+  },
+  {
+    "name": "Montserrat",
+    "iso2Code": "MS",
+    "iso3Code": "MSR",
+    "isoNumericCode": "500",
+    "postalCodeRegEx": null,
+    "callingCode": "1 664"
+  },
+  {
+    "name": "Morocco",
+    "iso2Code": "MA",
+    "iso3Code": "MAR",
+    "isoNumericCode": "504",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "212"
+  },
+  {
+    "name": "Mozambique",
+    "iso2Code": "MZ",
+    "iso3Code": "MOZ",
+    "isoNumericCode": "508",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "258"
+  },
+  {
+    "name": "Myanmar",
+    "iso2Code": "MM",
+    "iso3Code": "MMR",
+    "isoNumericCode": "104",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "95"
+  },
+  {
+    "name": "Namibia",
+    "iso2Code": "NA",
+    "iso3Code": "NAM",
+    "isoNumericCode": "516",
+    "postalCodeRegEx": null,
+    "callingCode": "264"
+  },
+  {
+    "name": "Nauru",
+    "iso2Code": "NR",
+    "iso3Code": "NRU",
+    "isoNumericCode": "520",
+    "postalCodeRegEx": null,
+    "callingCode": "674"
+  },
+  {
+    "name": "Nepal",
+    "iso2Code": "NP",
+    "iso3Code": "NPL",
+    "isoNumericCode": "524",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "977"
+  },
+  {
+    "name": "Netherlands",
+    "iso2Code": "NL",
+    "iso3Code": "NLD",
+    "isoNumericCode": "528",
+    "postalCodeRegEx": "[0-9]{4}[ ]*[A-Z]{2}",
+    "callingCode": "31"
+  },
+  {
+    "name": "New Caledonia",
+    "iso2Code": "NC",
+    "iso3Code": "NCL",
+    "isoNumericCode": "540",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "687"
+  },
+  {
+    "name": "New Zealand",
+    "iso2Code": "NZ",
+    "iso3Code": "NZL",
+    "isoNumericCode": "554",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "64"
+  },
+  {
+    "name": "Nicaragua",
+    "iso2Code": "NI",
+    "iso3Code": "NIC",
+    "isoNumericCode": "558",
+    "postalCodeRegEx": "(?:[0-9]{3}-?){2}[0-9]",
+    "callingCode": "505"
+  },
+  {
+    "name": "Niger",
+    "iso2Code": "NE",
+    "iso3Code": "NER",
+    "isoNumericCode": "562",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "227"
+  },
+  {
+    "name": "Nigeria",
+    "iso2Code": "NG",
+    "iso3Code": "NGA",
+    "isoNumericCode": "566",
+    "postalCodeRegEx": "[0-9]{6}",
+    "callingCode": "234"
+  },
+  {
+    "name": "Niue",
+    "iso2Code": "NU",
+    "iso3Code": "NIU",
+    "isoNumericCode": "570",
+    "postalCodeRegEx": null,
+    "callingCode": "683"
+  },
+  {
+    "name": "Norfolk Island",
+    "iso2Code": "NF",
+    "iso3Code": "NFK",
+    "isoNumericCode": "574",
+    "postalCodeRegEx": null,
+    "callingCode": "672 3"
+  },
+  {
+    "name": "Northern Mariana Islands",
+    "iso2Code": "MP",
+    "iso3Code": "MNP",
+    "isoNumericCode": "580",
+    "postalCodeRegEx": "[0-9]{5}(?:-?[0-9]{4})?",
+    "callingCode": "1 670"
+  },
+  {
+    "name": "Norway",
+    "iso2Code": "NO",
+    "iso3Code": "NOR",
+    "isoNumericCode": "578",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "47"
+  },
+  {
+    "name": "Oman",
+    "iso2Code": "OM",
+    "iso3Code": "OMN",
+    "isoNumericCode": "512",
+    "postalCodeRegEx": "[0-9]{3}",
+    "callingCode": "968"
+  },
+  {
+    "name": "Pakistan",
+    "iso2Code": "PK",
+    "iso3Code": "PAK",
+    "isoNumericCode": "586",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "92"
+  },
+  {
+    "name": "Palau",
+    "iso2Code": "PW",
+    "iso3Code": "PLW",
+    "isoNumericCode": "585",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "680"
+  },
+  {
+    "name": "Palestine, State of",
+    "iso2Code": "PS",
+    "iso3Code": "PSE",
+    "isoNumericCode": "275",
+    "postalCodeRegEx": null,
+    "callingCode": "970"
+  },
+  {
+    "name": "Panama",
+    "iso2Code": "PA",
+    "iso3Code": "PAN",
+    "isoNumericCode": "591",
+    "postalCodeRegEx": null,
+    "callingCode": "507"
+  },
+  {
+    "name": "Papua New Guinea",
+    "iso2Code": "PG",
+    "iso3Code": "PNG",
+    "isoNumericCode": "598",
+    "postalCodeRegEx": "[0-9]{3}",
+    "callingCode": "675"
+  },
+  {
+    "name": "Paraguay",
+    "iso2Code": "PY",
+    "iso3Code": "PRY",
+    "isoNumericCode": "600",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "595"
+  },
+  {
+    "name": "Peru",
+    "iso2Code": "PE",
+    "iso3Code": "PER",
+    "isoNumericCode": "604",
+    "postalCodeRegEx": "[0-9]{2}",
+    "callingCode": "51"
+  },
+  {
+    "name": "Philippines",
+    "iso2Code": "PH",
+    "iso3Code": "PHL",
+    "isoNumericCode": "608",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "63"
+  },
+  {
+    "name": "Pitcairn",
+    "iso2Code": "PN",
+    "iso3Code": "PCN",
+    "isoNumericCode": "612",
+    "postalCodeRegEx": null,
+    "callingCode": "64"
+  },
+  {
+    "name": "Poland",
+    "iso2Code": "PL",
+    "iso3Code": "POL",
+    "isoNumericCode": "616",
+    "postalCodeRegEx": "[0-9]{2}-?[0-9]{3}",
+    "callingCode": "48"
+  },
+  {
+    "name": "Portugal",
+    "iso2Code": "PT",
+    "iso3Code": "PRT",
+    "isoNumericCode": "620",
+    "postalCodeRegEx": "[0-9]{4}-?[0-9]{3}",
+    "callingCode": "351"
+  },
+  {
+    "name": "Puerto Rico",
+    "iso2Code": "PR",
+    "iso3Code": "PRI",
+    "isoNumericCode": "630",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": ["1 787", "1 939"]
+  },
+  {
+    "name": "Qatar",
+    "iso2Code": "QA",
+    "iso3Code": "QAT",
+    "isoNumericCode": "634",
+    "postalCodeRegEx": null,
+    "callingCode": "974"
+  },
+  {
+    "name": "Réunion",
+    "iso2Code": "RE",
+    "iso3Code": "REU",
+    "isoNumericCode": "638",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "262"
+  },
+  {
+    "name": "Romania",
+    "iso2Code": "RO",
+    "iso3Code": "ROU",
+    "isoNumericCode": "642",
+    "postalCodeRegEx": "[0-9]{6}",
+    "callingCode": "40"
+  },
+  {
+    "name": "Russia",
+    "iso2Code": "RU",
+    "iso3Code": "RUS",
+    "isoNumericCode": "643",
+    "postalCodeRegEx": "[0-9]{6}",
+    "callingCode": "7"
+  },
+  {
+    "name": "Rwanda",
+    "iso2Code": "RW",
+    "iso3Code": "RWA",
+    "isoNumericCode": "646",
+    "postalCodeRegEx": null,
+    "callingCode": "250"
+  },
+  {
+    "name": "Saint Barthélemy",
+    "iso2Code": "BL",
+    "iso3Code": "BLM",
+    "isoNumericCode": "652",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "590"
+  },
+  {
+    "name": "Saint Helena",
+    "iso2Code": "SH",
+    "iso3Code": "SHN",
+    "isoNumericCode": "654",
+    "postalCodeRegEx": null,
+    "callingCode": "290"
+  },
+  {
+    "name": "Saint Kitts and Nevis",
+    "iso2Code": "KN",
+    "iso3Code": "KNA",
+    "isoNumericCode": "659",
+    "postalCodeRegEx": null,
+    "callingCode": "1 869"
+  },
+  {
+    "name": "Saint Lucia",
+    "iso2Code": "LC",
+    "iso3Code": "LCA",
+    "isoNumericCode": "662",
+    "postalCodeRegEx": null,
+    "callingCode": "1 758"
+  },
+  {
+    "name": "Saint Martin (France)",
+    "iso2Code": "MF",
+    "iso3Code": "MAF",
+    "isoNumericCode": "663",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "590"
+  },
+  {
+    "name": "Saint Pierre and Miquelon",
+    "iso2Code": "PM",
+    "iso3Code": "SPM",
+    "isoNumericCode": "666",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "508"
+  },
+  {
+    "name": "Saint Vincent and the Grenadines",
+    "iso2Code": "VC",
+    "iso3Code": "VCT",
+    "isoNumericCode": "670",
+    "postalCodeRegEx": null,
+    "callingCode": "1 784"
+  },
+  {
+    "name": "Samoa",
+    "iso2Code": "WS",
+    "iso3Code": "WSM",
+    "isoNumericCode": "882",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "685"
+  },
+  {
+    "name": "San Marino",
+    "iso2Code": "SM",
+    "iso3Code": "SMR",
+    "isoNumericCode": "674",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "378"
+  },
+  {
+    "name": "São Tomé and Príncipe",
+    "iso2Code": "ST",
+    "iso3Code": "STP",
+    "isoNumericCode": "678",
+    "postalCodeRegEx": null,
+    "callingCode": "239"
+  },
+  {
+    "name": "Saudi Arabia",
+    "iso2Code": "SA",
+    "iso3Code": "SAU",
+    "isoNumericCode": "682",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "966"
+  },
+  {
+    "name": "Senegal",
+    "iso2Code": "SN",
+    "iso3Code": "SEN",
+    "isoNumericCode": "686",
+    "postalCodeRegEx": null,
+    "callingCode": "221"
+  },
+  {
+    "name": "Serbia",
+    "iso2Code": "RS",
+    "iso3Code": "SRB",
+    "isoNumericCode": "688",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "381"
+  },
+  {
+    "name": "Seychelles",
+    "iso2Code": "SC",
+    "iso3Code": "SYC",
+    "isoNumericCode": "690",
+    "postalCodeRegEx": null,
+    "callingCode": "248"
+  },
+  {
+    "name": "Sierra Leone",
+    "iso2Code": "SL",
+    "iso3Code": "SLE",
+    "isoNumericCode": "694",
+    "postalCodeRegEx": null,
+    "callingCode": "232"
+  },
+  {
+    "name": "Singapore",
+    "iso2Code": "SG",
+    "iso3Code": "SGP",
+    "isoNumericCode": "702",
+    "postalCodeRegEx": "[0-9]{6}",
+    "callingCode": "65"
+  },
+  {
+    "name": "Sint Maarten (Netherland)",
+    "iso2Code": "SX",
+    "iso3Code": "SXM",
+    "isoNumericCode": "534",
+    "postalCodeRegEx": null,
+    "callingCode": "1 721"
+  },
+  {
+    "name": "Slovakia",
+    "iso2Code": "SK",
+    "iso3Code": "SVK",
+    "isoNumericCode": "703",
+    "postalCodeRegEx": "[0-9]{3}[ ]*[0-9]{2}",
+    "callingCode": "421"
+  },
+  {
+    "name": "Slovenia",
+    "iso2Code": "SI",
+    "iso3Code": "SVN",
+    "isoNumericCode": "705",
+    "postalCodeRegEx": "SI-?[0-9]{4}",
+    "callingCode": "386"
+  },
+  {
+    "name": "Solomon Islands",
+    "iso2Code": "SB",
+    "iso3Code": "SLB",
+    "isoNumericCode": "090",
+    "postalCodeRegEx": null,
+    "callingCode": "677"
+  },
+  {
+    "name": "Somalia",
+    "iso2Code": "SO",
+    "iso3Code": "SOM",
+    "isoNumericCode": "706",
+    "postalCodeRegEx": null,
+    "callingCode": "252"
+  },
+  {
+    "name": "South Africa",
+    "iso2Code": "ZA",
+    "iso3Code": "ZAF",
+    "isoNumericCode": "710",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "27"
+  },
+  {
+    "name": "South Georgia and the South Sandwich Islands",
+    "iso2Code": "GS",
+    "iso3Code": "SGS",
+    "isoNumericCode": "239",
+    "postalCodeRegEx": null,
+    "callingCode": "500"
+  },
+  {
+    "name": "South Sudan",
+    "iso2Code": "SS",
+    "iso3Code": "SSD",
+    "isoNumericCode": "728",
+    "postalCodeRegEx": null,
+    "callingCode": "211"
+  },
+  {
+    "name": "Spain",
+    "iso2Code": "ES",
+    "iso3Code": "ESP",
+    "isoNumericCode": "724",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "34"
+  },
+  {
+    "name": "Sri Lanka",
+    "iso2Code": "LK",
+    "iso3Code": "LKA",
+    "isoNumericCode": "144",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "94"
+  },
+  {
+    "name": "Sudan",
+    "iso2Code": "SD",
+    "iso3Code": "SDN",
+    "isoNumericCode": "729",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "249"
+  },
+  {
+    "name": "Suriname",
+    "iso2Code": "SR",
+    "iso3Code": "SUR",
+    "isoNumericCode": "740",
+    "postalCodeRegEx": null,
+    "callingCode": "597"
+  },
+  {
+    "name": "Svalbard and Jan Mayen",
+    "iso2Code": "SJ",
+    "iso3Code": "SJM",
+    "isoNumericCode": "744",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "47 79"
+  },
+  {
+    "name": "Swaziland",
+    "iso2Code": "SZ",
+    "iso3Code": "SWZ",
+    "isoNumericCode": "748",
+    "postalCodeRegEx": "[A-Z][0-9]{3}",
+    "callingCode": "268"
+  },
+  {
+    "name": "Sweden",
+    "iso2Code": "SE",
+    "iso3Code": "SWE",
+    "isoNumericCode": "752",
+    "postalCodeRegEx": "SE-?[0-9]{3}[ ]*[0-9]{2}",
+    "callingCode": "46"
+  },
+  {
+    "name": "Switzerland",
+    "iso2Code": "CH",
+    "iso3Code": "CHE",
+    "isoNumericCode": "756",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "41"
+  },
+  {
+    "name": "Syria",
+    "iso2Code": "SY",
+    "iso3Code": "SYR",
+    "isoNumericCode": "760",
+    "postalCodeRegEx": null,
+    "callingCode": "963"
+  },
+  {
+    "name": "Taiwan",
+    "iso2Code": "TW",
+    "iso3Code": "TWN",
+    "isoNumericCode": "158",
+    "postalCodeRegEx": "[0-9]{3}[ ]*[0-9]{2}",
+    "callingCode": "886"
+  },
+  {
+    "name": "Tajikistan",
+    "iso2Code": "TJ",
+    "iso3Code": "TJK",
+    "isoNumericCode": "762",
+    "postalCodeRegEx": "[0-9]{6}",
+    "callingCode": "992"
+  },
+  {
+    "name": "Tanzania",
+    "iso2Code": "TZ",
+    "iso3Code": "TZA",
+    "isoNumericCode": "834",
+    "postalCodeRegEx": null,
+    "callingCode": "255"
+  },
+  {
+    "name": "Thailand",
+    "iso2Code": "TH",
+    "iso3Code": "THA",
+    "isoNumericCode": "764",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "66"
+  },
+  {
+    "name": "Timor-Leste",
+    "iso2Code": "TL",
+    "iso3Code": "TLS",
+    "isoNumericCode": "626",
+    "postalCodeRegEx": null,
+    "callingCode": null
+  },
+  {
+    "name": "Togo",
+    "iso2Code": "TG",
+    "iso3Code": "TGO",
+    "isoNumericCode": "768",
+    "postalCodeRegEx": null,
+    "callingCode": "228"
+  },
+  {
+    "name": "Tokelau",
+    "iso2Code": "TK",
+    "iso3Code": "TKL",
+    "isoNumericCode": "772",
+    "postalCodeRegEx": null,
+    "callingCode": "690"
+  },
+  {
+    "name": "Tonga",
+    "iso2Code": "TO",
+    "iso3Code": "TON",
+    "isoNumericCode": "776",
+    "postalCodeRegEx": null,
+    "callingCode": "676"
+  },
+  {
+    "name": "Trinidad and Tobago",
+    "iso2Code": "TT",
+    "iso3Code": "TTO",
+    "isoNumericCode": "780",
+    "postalCodeRegEx": null,
+    "callingCode": "1 868"
+  },
+  {
+    "name": "Tunisia",
+    "iso2Code": "TN",
+    "iso3Code": "TUN",
+    "isoNumericCode": "788",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "216"
+  },
+  {
+    "name": "Turkey",
+    "iso2Code": "TR",
+    "iso3Code": "TUR",
+    "isoNumericCode": "792",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "90"
+  },
+  {
+    "name": "Turkmenistan",
+    "iso2Code": "TM",
+    "iso3Code": "TKM",
+    "isoNumericCode": "795",
+    "postalCodeRegEx": "[0-9]{6}",
+    "callingCode": "993"
+  },
+  {
+    "name": "Turks and Caicos Islands",
+    "iso2Code": "TC",
+    "iso3Code": "TCA",
+    "isoNumericCode": "796",
+    "postalCodeRegEx": "TKCA[ ]*1ZZ",
+    "callingCode": "1 649"
+  },
+  {
+    "name": "Tuvalu",
+    "iso2Code": "TV",
+    "iso3Code": "TUV",
+    "isoNumericCode": "798",
+    "postalCodeRegEx": null,
+    "callingCode": "688"
+  },
+  {
+    "name": "Uganda",
+    "iso2Code": "UG",
+    "iso3Code": "UGA",
+    "isoNumericCode": "800",
+    "postalCodeRegEx": null,
+    "callingCode": "256"
+  },
+  {
+    "name": "Ukraine",
+    "iso2Code": "UA",
+    "iso3Code": "UKR",
+    "isoNumericCode": "804",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "380"
+  },
+  {
+    "name": "United Arab Emirates",
+    "iso2Code": "AE",
+    "iso3Code": "ARE",
+    "isoNumericCode": "784",
+    "postalCodeRegEx": null,
+    "callingCode": "971"
+  },
+  {
+    "name": "United Kingdom",
+    "iso2Code": "GB",
+    "iso3Code": "GBR",
+    "isoNumericCode": "826",
+    "postalCodeRegEx": "[A-Z]{1,2}[0-9][A-Z0-9]?[ -]?[0-9][A-Z]{2}",
+    "callingCode": "44"
+  },
+  {
+    "name": "United States",
+    "iso2Code": "US",
+    "iso3Code": "USA",
+    "isoNumericCode": "840",
+    "postalCodeRegEx": "[0-9]{5}(?:[ -]?[0-9]{4})?",
+    "callingCode": "1"
+  },
+  {
+    "name": "United States Minor Outlying Islands",
+    "iso2Code": "UM",
+    "iso3Code": "UMI",
+    "isoNumericCode": "581",
+    "postalCodeRegEx": null,
+    "callingCode": "1"
+  },
+  {
+    "name": "Uruguay",
+    "iso2Code": "UY",
+    "iso3Code": "URY",
+    "isoNumericCode": "858",
+    "postalCodeRegEx": "[0-9]{5}(?:-?[0-9]{4})?",
+    "callingCode": "598"
+  },
+  {
+    "name": "Uzbekistan",
+    "iso2Code": "UZ",
+    "iso3Code": "UZB",
+    "isoNumericCode": "860",
+    "postalCodeRegEx": "[0-9]{6}",
+    "callingCode": "998"
+  },
+  {
+    "name": "Vanuatu",
+    "iso2Code": "VU",
+    "iso3Code": "VUT",
+    "isoNumericCode": "548",
+    "postalCodeRegEx": null,
+    "callingCode": "678"
+  },
+  {
+    "name": "Venezuela",
+    "iso2Code": "VE",
+    "iso3Code": "VEN",
+    "isoNumericCode": "862",
+    "postalCodeRegEx": "[0-9]{4}",
+    "callingCode": "58"
+  },
+  {
+    "name": "Viet Nam",
+    "iso2Code": "VN",
+    "iso3Code": "VNM",
+    "isoNumericCode": "704",
+    "postalCodeRegEx": "[0-9]{6}",
+    "callingCode": "84"
+  },
+  {
+    "name": "Virgin Islands, British",
+    "iso2Code": "VG",
+    "iso3Code": "VGB",
+    "isoNumericCode": "092",
+    "postalCodeRegEx": "VG[0-9]{4}",
+    "callingCode": null
+  },
+  {
+    "name": "Virgin Islands, U.S.",
+    "iso2Code": "VI",
+    "iso3Code": "VIR",
+    "isoNumericCode": "850",
+    "postalCodeRegEx": "[0-9]{5}(?:-?[0-9]{4})?",
+    "callingCode": "1 340"
+  },
+  {
+    "name": "Wallis and Futuna",
+    "iso2Code": "WF",
+    "iso3Code": "WLF",
+    "isoNumericCode": "876",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "681"
+  },
+  {
+    "name": "Western Sahara",
+    "iso2Code": "EH",
+    "iso3Code": "ESH",
+    "isoNumericCode": "732",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": null
+  },
+  {
+    "name": "Yemen",
+    "iso2Code": "YE",
+    "iso3Code": "YEM",
+    "isoNumericCode": "887",
+    "postalCodeRegEx": null,
+    "callingCode": "967"
+  },
+  {
+    "name": "Zambia",
+    "iso2Code": "ZM",
+    "iso3Code": "ZMB",
+    "isoNumericCode": "894",
+    "postalCodeRegEx": "[0-9]{5}",
+    "callingCode": "260"
+  },
+  {
+    "name": "Zimbabwe",
+    "iso2Code": "ZW",
+    "iso3Code": "ZWE",
+    "isoNumericCode": "716",
+    "postalCodeRegEx": null,
+    "callingCode": "263"
+  }
+]
