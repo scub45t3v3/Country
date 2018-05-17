@@ -40,6 +40,7 @@
     "unit.js": "^2.0.0"
   },
   "dependencies": {
+    "@scuba-squad/country-db": "^1.0.0",
     "underscore": "^1.9.0"
   }
 }

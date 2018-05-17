@@ -5,7 +5,7 @@
 
   ({version} = require('./package'));
 
-  countries = require('./countries');
+  countries = require('@scuba-squad/country-db');
 
   countries = _.map(countries, function(country) {
     if (country.postalCodeRegEx) {
