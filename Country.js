@@ -5,14 +5,7 @@
 
   ({version} = require('./package'));
 
-  countries = require('@scuba-squad/country-db');
-
-  countries = _.map(countries, function(country) {
-    if (country.postalCodeRegEx) {
-      country.postalCodeRegEx = new RegExp(`^${country.postalCodeRegEx}$`, 'i');
-    }
-    return country;
-  });
+  countries = require('./countries');
 
   Country = function(opt = {}) {
     var addCallingCode, callingCode, get, getCallingCode, getIso2Code, getIso3Code, getIsoNumericCode, getName, getPostalCodeRegEx, hasAllCallingCodes, hasAnyCallingCodes, hasCallingCode, isValidPostalCode, iso2Code, iso3Code, isoNumericCode, name, postalCodeRegEx, removeCallingCode, sanitizeCallingCode, set, setCallingCode, setIso2Code, setIso3Code, setIsoNumericCode, setName, setPostalCodeRegEx;

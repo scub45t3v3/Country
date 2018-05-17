@@ -1,11 +1,6 @@
 _ = require 'underscore'
 {version} = require './package'
-countries = require '@scuba-squad/country-db'
-countries = _.map countries, (country) ->
-  if country.postalCodeRegEx
-    country.postalCodeRegEx = new RegExp "^#{country.postalCodeRegEx}$", 'i'
-
-  return country
+countries = require './countries'
 
 Country = (opt = {}) ->
   if !(this instanceof Country)
