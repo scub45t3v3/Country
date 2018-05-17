@@ -40,7 +40,6 @@
     "unit.js": "^2.0.0"
   },
   "dependencies": {
-    "underscore": "^1.9.0",
-    "underscore.string": "^3.3.4"
+    "underscore": "^1.9.0"
   }
 }
