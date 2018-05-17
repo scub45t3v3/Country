@@ -53,7 +53,7 @@
     };
     setIsoNumericCode = function(value) {
       value = value != null ? typeof value.toString === "function" ? value.toString().trim() : void 0 : void 0;
-      if ((value != null) && !/^\d{3}$/.test(value)) {
+      if ((value != null) && !/^\d{3}$/.test(value) && value !== '000') {
         throw new TypeError(`${value} must be valid isoNumericCode`);
       }
       isoNumericCode = value;

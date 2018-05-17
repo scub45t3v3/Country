@@ -53,7 +53,7 @@ Country = (opt = {}) ->
   setIsoNumericCode = (value) ->
     value = value?.toString?().trim()
 
-    if value? && !/^\d{3}$/.test(value)
+    if value? && !/^\d{3}$/.test(value) && value != '000'
       throw new TypeError "#{value} must be valid isoNumericCode"
 
     isoNumericCode = value
