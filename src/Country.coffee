@@ -28,7 +28,7 @@ Country = (opt = {}) ->
     value = value?.toString?().trim().toUpperCase()
 
     if value? && !/^[a-z]{2}$/i.test(value)
-      throw new TypeError "#{value} must be valid iso2Code"
+      throw new TypeError 'iso2Code must be 2 char alpha string'
 
     iso2Code = value
 
@@ -41,7 +41,7 @@ Country = (opt = {}) ->
     value = value?.toString?().trim().toUpperCase()
 
     if value? && !/^[a-z]{3}$/i.test(value)
-      throw new TypeError "#{value} must be valid iso3Code"
+      throw new TypeError 'iso3Code must be 3 char alpha string'
 
     iso3Code = value
 
@@ -54,7 +54,7 @@ Country = (opt = {}) ->
     value = value?.toString?().trim()
 
     if value? && !/^\d{3}$/.test(value) && value != '000'
-      throw new TypeError "#{value} must be valid isoNumericCode"
+      throw new TypeError 'isoNumericCode must be a 3 digit string'
 
     isoNumericCode = value
 
@@ -65,7 +65,7 @@ Country = (opt = {}) ->
 
   setPostalCodeRegEx = (value) ->
     if value? && !(value instanceof RegExp)
-      throw new TypeError "#{value} must be a RegExp"
+      throw new TypeError 'postalCodeRegEx must be a RegExp'
 
     postalCodeRegEx = value
 
@@ -132,7 +132,7 @@ Country = (opt = {}) ->
       value = value.replace /\s+/, ' '
 
       if !/^\+[1-9][\s\d]*$/.test(value)
-        throw new TypeError "#{value} must be valid callingCode"
+        throw new TypeError 'callingCode must be digits with optional space'
 
       return value
 

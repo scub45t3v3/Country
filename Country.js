@@ -32,7 +32,7 @@
     setIso2Code = function(value) {
       value = value != null ? typeof value.toString === "function" ? value.toString().trim().toUpperCase() : void 0 : void 0;
       if ((value != null) && !/^[a-z]{2}$/i.test(value)) {
-        throw new TypeError(`${value} must be valid iso2Code`);
+        throw new TypeError('iso2Code must be 2 char alpha string');
       }
       iso2Code = value;
       return this;
@@ -43,7 +43,7 @@
     setIso3Code = function(value) {
       value = value != null ? typeof value.toString === "function" ? value.toString().trim().toUpperCase() : void 0 : void 0;
       if ((value != null) && !/^[a-z]{3}$/i.test(value)) {
-        throw new TypeError(`${value} must be valid iso3Code`);
+        throw new TypeError('iso3Code must be 3 char alpha string');
       }
       iso3Code = value;
       return this;
@@ -54,7 +54,7 @@
     setIsoNumericCode = function(value) {
       value = value != null ? typeof value.toString === "function" ? value.toString().trim() : void 0 : void 0;
       if ((value != null) && !/^\d{3}$/.test(value) && value !== '000') {
-        throw new TypeError(`${value} must be valid isoNumericCode`);
+        throw new TypeError('isoNumericCode must be a 3 digit string');
       }
       isoNumericCode = value;
       return this;
@@ -64,7 +64,7 @@
     };
     setPostalCodeRegEx = function(value) {
       if ((value != null) && !(value instanceof RegExp)) {
-        throw new TypeError(`${value} must be a RegExp`);
+        throw new TypeError('postalCodeRegEx must be a RegExp');
       }
       postalCodeRegEx = value;
       return this;
@@ -121,7 +121,7 @@
         value = value.replace(/^\+*\s*/, '+');
         value = value.replace(/\s+/, ' ');
         if (!/^\+[1-9][\s\d]*$/.test(value)) {
-          throw new TypeError(`${value} must be valid callingCode`);
+          throw new TypeError('callingCode must be digits with optional space');
         }
         return value;
       });
