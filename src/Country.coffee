@@ -88,7 +88,7 @@ Country = (opt = {}) ->
   hasAllCallingCodes = (args...) ->
     args = sanitizeCallingCode args...
 
-    return _.every args, hasCallingCode
+    return _.all args, hasCallingCode
 
   addCallingCode = (args...) ->
     args = sanitizeCallingCode args...

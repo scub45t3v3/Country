@@ -83,7 +83,7 @@
     };
     hasAllCallingCodes = function(...args) {
       args = sanitizeCallingCode(...args);
-      return _.every(args, hasCallingCode);
+      return _.all(args, hasCallingCode);
     };
     addCallingCode = function(...args) {
       args = sanitizeCallingCode(...args);
