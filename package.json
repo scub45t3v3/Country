@@ -42,6 +42,7 @@
   },
   "dependencies": {
     "@scuba-squad/country-db": "^1.0.0",
+    "debug": "^3.1.0",
     "underscore": "^1.9.0"
   }
 }
