@@ -193,16 +193,48 @@ Country = (opt = {}) ->
       enumerable: false
       get: getIso2Code
       set: setIso2Code
+    alpha2Code:
+      enumerable: false
+      get: getIso2Code
+      set: setIso2Code
+    alpha2code:
+      enumerable: false
+      get: getIso2Code
+      set: setIso2Code
+    alpha_2_code:
+      enumerable: false
+      get: getIso2Code
+      set: setIso2Code
+    alpha2:
+      enumerable: false
+      get: getIso2Code
+      set: setIso2Code
+    alpha_2:
+      enumerable: false
+      get: getIso2Code
+      set: setIso2Code
     getIso2Code:
       writable: false
       value: getIso2Code
     get_iso_2_code:
       writable: false
       value: getIso2Code
+    getAlpha2Code:
+      writable: false
+      value: getIso2Code
+    get_alpha_2_code:
+      writable: false
+      value: getIso2Code
     setIso2Code:
       writable: false
       value: setIso2Code
     set_iso_2_code:
+      writable: false
+      value: setIso2Code
+    setAlpha2Code:
+      writable: false
+      value: setIso2Code
+    set_alpha_2_code:
       writable: false
       value: setIso2Code
     iso3Code:
@@ -225,16 +257,48 @@ Country = (opt = {}) ->
       enumerable: false
       get: getIso3Code
       set: setIso3Code
+    alpha3Code:
+      enumerable: false
+      get: getIso3Code
+      set: setIso3Code
+    alpha3code:
+      enumerable: false
+      get: getIso3Code
+      set: setIso3Code
+    alpha_3_code:
+      enumerable: false
+      get: getIso3Code
+      set: setIso3Code
+    alpha3:
+      enumerable: false
+      get: getIso3Code
+      set: setIso3Code
+    alpha_3:
+      enumerable: false
+      get: getIso3Code
+      set: setIso3Code
     getIso3Code:
       writable: false
       value: getIso3Code
     get_iso_3_code:
       writable: false
       value: getIso3Code
+    getAlpha3Code:
+      writable: false
+      value: getIso3Code
+    get_alpha_3_code:
+      writable: false
+      value: getIso3Code
     setIso3Code:
       writable: false
       value: setIso3Code
     set_iso_3_code:
+      writable: false
+      value: setIso3Code
+    setAlpha3Code:
+      writable: false
+      value: setIso3Code
+    set_alpha_3_code:
       writable: false
       value: setIso3Code
     isoNumericCode:
@@ -257,10 +321,32 @@ Country = (opt = {}) ->
       enumerable: false
       get: getIsoNumericCode
       set: setIsoNumericCode
+    numericCode:
+      enumerable: false
+      get: getIsoNumericCode
+      set: setIsoNumericCode
+    numericcode:
+      enumerable: false
+      get: getIsoNumericCode
+      set: setIsoNumericCode
+    numeric_code:
+      enumerable: false
+      get: getIsoNumericCode
+      set: setIsoNumericCode
+    id:
+      enumerable: false
+      get: getIsoNumericCode
+      set: setIsoNumericCode
     getIsoNumericCode:
       writable: false
       value: getIsoNumericCode
     getIsoId:
+      writable: false
+      value: getIsoNumericCode
+    getNumericCode:
+      writable: false
+      value: getIsoNumericCode
+    getId:
       writable: false
       value: getIsoNumericCode
     get_iso_numeric_code:
@@ -269,16 +355,34 @@ Country = (opt = {}) ->
     get_iso_id:
       writable: false
       value: getIsoNumericCode
+    get_numeric_code:
+      writable: false
+      value: getIsoNumericCode
+    get_id:
+      writable: false
+      value: getIsoNumericCode
     setIsoNumericCode:
       writable: false
       value: setIsoNumericCode
     setIsoId:
       writable: false
       value: setIsoNumericCode
-    set_iso_id:
+    setNumericCode:
+      writable: false
+      value: setIsoNumericCode
+    setId:
       writable: false
       value: setIsoNumericCode
     set_iso_numeric_code:
+      writable: false
+      value: setIsoNumericCode
+    set_numeric_code:
+      writable: false
+      value: setIsoNumericCode
+    set_iso_id:
+      writable: false
+      value: setIsoNumericCode
+    set_id:
       writable: false
       value: setIsoNumericCode
     postalCodeRegEx:
@@ -286,6 +390,14 @@ Country = (opt = {}) ->
       get: getPostalCodeRegEx
       set: setPostalCodeRegEx
     postalCodeRegExp:
+      enumerable: false
+      get: getPostalCodeRegEx
+      set: getPostalCodeRegEx
+    postalcoderegex:
+      enumerable: false
+      get: getPostalCodeRegEx
+      set: getPostalCodeRegEx
+    postalcoderegexp:
       enumerable: false
       get: getPostalCodeRegEx
       set: getPostalCodeRegEx
@@ -325,7 +437,23 @@ Country = (opt = {}) ->
       enumerable: true
       get: getCallingCode
       set: setCallingCode
+    callingCodes:
+      enumerable: false
+      get: getCallingCode
+      set: setCallingCode
+    callingcode:
+      enumerable: false
+      get: getCallingCode
+      set: setCallingCode
+    callingcodes:
+      enumerable: false
+      get: getCallingCode
+      set: setCallingCode
     calling_code:
+      enumerable: false
+      get: getCallingCode
+      set: setCallingCode
+    calling_codes:
       enumerable: false
       get: getCallingCode
       set: setCallingCode
