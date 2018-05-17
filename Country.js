@@ -108,7 +108,7 @@
       return this;
     };
     getCallingCode = function() {
-      return callingCode;
+      return _.clone(callingCode);
     };
     sanitizeCallingCode = function(...args) {
       args = _.flatten(args);

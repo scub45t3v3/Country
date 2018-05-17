@@ -117,7 +117,7 @@ Country = (opt = {}) ->
     return this
 
   getCallingCode = ->
-    return callingCode
+    return _.clone callingCode
 
   sanitizeCallingCode = (args...) ->
     args = _.flatten args
