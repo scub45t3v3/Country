@@ -22,7 +22,7 @@ Country class definition
 Via [npm](https://www.npmjs.com/)
 
 ```bash
-npm install @scuba-squad/Country
+npm install @scuba-squad/country
 ```
 
 <a name="api"></a>
@@ -38,7 +38,7 @@ Static method to retrieve and build a Country object from the iso2Code
 **returns:** Country | false
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = Country.getByIso2Code('US'); // Country
 let nonExistant = Country.getByIso2Code('AA'); // false
@@ -55,7 +55,7 @@ Static method to retrieve and build a Country object from the iso3Code
 **returns:** Country | false
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = Country.getByIso3Code('USA'); // Country
 let nonExistant = Country.getByIso3Code('AAA'); // false
@@ -72,7 +72,7 @@ Static method to retrieve and build a Country object from the isoNumericCode
 **returns:** Country | false
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = Country.getByIsoNumericCode('840'); // Country
 let nonExistant = Country.getByIsoNumericCode('000'); // false
@@ -89,7 +89,7 @@ Static method to retrieve and build an array of Country objects who match the gi
 **returns:** Country[] | false
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = Country.getByPostalCode('11111'); // Country[]
 let nonExistant = Country.getByPostalCode('this is going to return false'); // false
@@ -106,7 +106,7 @@ Static method to retrieve and build an array of Country objects who match the gi
 **returns:** Country[] | false
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = Country.getByCallingCode('1'); // Country[]
 let nonExistant = Country.getByCallingCode('99999999999999'); // false
@@ -131,14 +131,14 @@ Country class constructor
 **throws:** TypeError
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = new Country();
 ```
 alternatively
 * you can create an instance without the new keyword
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = Country();
 ```
@@ -151,7 +151,7 @@ Semantic version number of class definition
 **returns:** string
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = new Country();
 country.VERSION; // 1.0.0
@@ -167,7 +167,7 @@ Property containing the name of the country
 **throws:** TypeError
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = new Country();
 // set name via setName()
@@ -184,7 +184,7 @@ Getter method for name property
 **returns:** string | undefined
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = new Country();
 // set name via setName()
@@ -206,7 +206,7 @@ Setter method for name property
 **throws:** TypeError
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = new Country();
 // set name via setName()
@@ -225,7 +225,7 @@ Property containing the [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) [
 **throws:** TypeError
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = new Country();
 // set iso2Code via setIso2Code()
@@ -242,7 +242,7 @@ Getter method for iso2Code property
 **returns:** string | undefined
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = new Country();
 // set iso2Code via setIso2Code()
@@ -264,7 +264,7 @@ Setter method for iso2Code property
 **throws:** TypeError
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = new Country();
 // set iso2Code via setIso2Code()
@@ -283,7 +283,7 @@ Property containing the [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) [
 **throws:** TypeError
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = new Country();
 // set iso3Code via setIso3Code()
@@ -300,7 +300,7 @@ Getter method for iso3Code property
 **returns:** string | undefined
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = new Country();
 // set iso3Code via setIso3Code()
@@ -322,7 +322,7 @@ Setter method for iso3Code property
 **throws:** TypeError
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = new Country();
 // set iso3Code via setIso3Code()
@@ -341,7 +341,7 @@ Property containing the [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) [
 **throws:** TypeError
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = new Country();
 // set isoNumericCode via setIsoNumericCode()
@@ -358,7 +358,7 @@ Getter method for isoNumericCode property
 **returns:** string | undefined
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = new Country();
 // set isoNumericCode via setIsoNumericCode()
@@ -380,7 +380,7 @@ Setter method for isoNumericCode property
 **throws:** TypeError
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = new Country();
 // set isoNumericCode via setIsoNumericCode()
@@ -399,7 +399,7 @@ Property containing the postal code validation regular expression for the countr
 **throws:** TypeError
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = new Country();
 // set postalCodeRegEx via setPostalCodeRegEx()
@@ -416,7 +416,7 @@ Getter method for postalCodeRegEx property
 **returns:** regexp | undefined | null
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = new Country();
 // set postalCodeRegEx via setPostalCodeRegEx()
@@ -438,7 +438,7 @@ Setter method for postalCodeRegEx property
 **throws:** TypeError
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = new Country();
 // set postalCodeRegEx via setPostalCodeRegEx()
@@ -457,7 +457,7 @@ Property containing the [calling code](https://en.wikipedia.org/wiki/List_of_cou
 **throws:** TypeError
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = new Country();
 // get callingCode via getCallingCode()
@@ -480,7 +480,7 @@ Getter method for callingCode property
 **returns:** string[] | undefined | null
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = new Country();
 country.getCallingCode(); // undefined
@@ -505,7 +505,7 @@ Setter method for callingCode property
 **throws:** TypeError
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = new Country();
 country
@@ -528,7 +528,7 @@ Method to append calling code(s) onto the callingCode property
 **throws:** TypeError
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = new Country();
 country
@@ -551,7 +551,7 @@ Method to remove calling code(s) from the callingCode property
 **throws:** TypeError
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = new Country();
 // set callingCode via setCallingCode()
@@ -574,7 +574,7 @@ Method to check if the given calling code is set for the country
 **throws:** TypeError
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = new Country();
 // set callingCode via setCallingCode()
@@ -599,7 +599,7 @@ Method to check if all the given calling codes are set for the country
 **throws:** TypeError
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = new Country();
 // set callingCode via setCallingCode()
@@ -636,7 +636,7 @@ Method to check if any of the given calling codes are set for the country
 **throws:** TypeError
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = new Country();
 // set callingCode via setCallingCode()
@@ -673,7 +673,7 @@ Method to create an object literal containing the set properties
 **throws:** TypeError
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = Country.getByIso2Code('US');
 country.get('iso3Code', 'callingCode'); // {iso3Code: 'USA', callingCode: ['+1']}
@@ -700,7 +700,7 @@ Method to bulk set properties on the country
 **throws:** TypeError
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 let country = new Country();
 country.set({name: 'Petoria', iso2Code: 'FG', iso3Code: 'GUY'});
@@ -719,7 +719,7 @@ Method to check if the given postal code is valid for the country
 **throws:** TypeError
 
 ```javascript
-const Country = require('@scuba-squad/Country');
+const Country = require('@scuba-squad/country');
 
 // create new instance of Country without setting postalCodeRegEx
 let country = new Country();
