@@ -1,726 +1,827 @@
-(function() {
-  var Country, _, countries, debug, version;
+'use strict';
 
-  _ = require('underscore');
+(() => {
+  // include dependecies
+  const _ = require('underscore');
+  const debug = require('debug')('Country');
+  const {version} = require('./package');
+  const countries = require('./countries');
 
-  debug = require('debug')('Country');
-
-  ({version} = require('./package'));
-
-  countries = require('./countries');
-
-  Country = function(opt = {}) {
-    var addCallingCode, callingCode, get, getCallingCode, getIso2Code, getIso3Code, getIsoNumericCode, getName, getPostalCodeRegEx, hasAllCallingCodes, hasAnyCallingCodes, hasCallingCode, isValidPostalCode, iso2Code, iso3Code, isoNumericCode, name, postalCodeRegEx, removeCallingCode, sanitizeCallingCode, set, setCallingCode, setIso2Code, setIso3Code, setIsoNumericCode, setName, setPostalCodeRegEx;
+  // Country class definition
+  const Country = function(opt = {}) {
     debug('call:Country(%o)', opt);
-    if (!(this instanceof Country)) {
+
+    // define auto instantiation
+    if (!new.target) {
       debug('re-call:Country with new operator');
+
       return new Country(opt);
     }
-    name = void 0;
-    iso2Code = void 0;
-    iso3Code = void 0;
-    isoNumericCode = void 0;
-    callingCode = void 0;
-    postalCodeRegEx = void 0;
-    setName = function(value) {
-      var ref;
+
+    // define private properties
+    let name;
+    let iso2Code;
+    let iso3Code;
+    let isoNumericCode;
+    let callingCode;
+    let postalCodeRegEx;
+
+    const setName = (value) => {
       debug('call:setName(%o)', value);
-      if ((value != null) && !_.isString(typeof value.toString === "function" ? value.toString() : void 0)) {
+      value = value && (value.toString() || `${value}`).trim();
+
+      if (value != null && !_.isString(value)) {
         debug('error:name = %o', value);
+
         throw new TypeError('name must be a string');
       }
+
       debug('before:set:name = %s', name);
-      name = value != null ? typeof value.toString === "function" ? (ref = value.toString()) != null ? typeof ref.trim === "function" ? ref.trim() : void 0 : void 0 : void 0 : void 0;
+      name = value || undefined;
       debug('after:set:name = %s', name);
+
       return this;
     };
-    getName = function() {
+
+    const getName = () => {
       debug('call:getName()');
+
       return name;
     };
-    setIso2Code = function(value) {
+
+    const setIso2Code = (value) => {
       debug('call:setIso2Code(%o)', value);
-      value = value != null ? typeof value.toString === "function" ? value.toString().trim().toUpperCase() : void 0 : void 0;
+      value = value && (value.toString() || `${value}`).trim().toUpperCase();
+
       if ((value != null) && !/^[a-z]{2}$/i.test(value)) {
         debug('error:iso2Code = %o', value);
+
         throw new TypeError('iso2Code must be 2 char alpha string');
       }
+
       debug('before:set:iso2Code = %s', iso2Code);
-      iso2Code = value;
+      iso2Code = value || undefined;
       debug('after:set:iso2Code = %s', iso2Code);
+
       return this;
     };
-    getIso2Code = function() {
+
+    const getIso2Code = () => {
       debug('call:getIso2Code()');
+
       return iso2Code;
     };
-    setIso3Code = function(value) {
+
+    const setIso3Code = (value) => {
       debug('call:setIso3Code(%o)', value);
-      value = value != null ? typeof value.toString === "function" ? value.toString().trim().toUpperCase() : void 0 : void 0;
+      value = value && (value.toString() || `${value}`).trim().toUpperCase();
+
       if ((value != null) && !/^[a-z]{3}$/i.test(value)) {
         debug('error:iso3Code = %o', value);
+
         throw new TypeError('iso3Code must be 3 char alpha string');
       }
+
       debug('before:set:iso3Code = %s', iso3Code);
-      iso3Code = value;
+      iso3Code = value || undefined;
       debug('after:set:iso3Code = %s', iso3Code);
+
       return this;
     };
-    getIso3Code = function() {
+
+    const getIso3Code = () => {
       debug('call:getIso3Code()');
+
       return iso3Code;
     };
-    setIsoNumericCode = function(value) {
+
+    const setIsoNumericCode = (value) => {
       debug('call:setIsoNumericCode(%o)', value);
-      value = value != null ? typeof value.toString === "function" ? value.toString().trim() : void 0 : void 0;
-      if ((value != null) && !/^\d{3}$/.test(value) && value !== '000') {
+      value = value && (value.toString() || `${value}`).trim();
+
+      if (value != null && value != '000' && !/^\d{3}$/.test(value)) {
         debug('error:isoNumericCode = %o', value);
+
         throw new TypeError('isoNumericCode must be a 3 digit string');
       }
+
       debug('before:set:isoNumericCode = %s', value);
-      isoNumericCode = value;
+      isoNumericCode = value || undefined;
       debug('after:set:isoNumericCode = %s', value);
+
       return this;
     };
-    getIsoNumericCode = function() {
+
+    const getIsoNumericCode = () => {
       debug('call:getIsoNumericCode()');
+
       return isoNumericCode;
     };
-    setPostalCodeRegEx = function(value) {
+
+    const setPostalCodeRegEx = (value) => {
       debug('call:setPostalCodeRegEx(%o)', value);
-      if ((value != null) && !(value instanceof RegExp)) {
+
+      if (value != null && !(value instanceof RegExp)) {
         debug('error:postalCodeRegEx = %o', value);
+
         throw new TypeError('postalCodeRegEx must be a RegExp');
       }
+
       debug('before:set:postalCodeRegEx = %o', postalCodeRegEx);
       postalCodeRegEx = value;
       debug('after:set:postalCodeRegEx = %o', postalCodeRegEx);
+
       return this;
     };
-    getPostalCodeRegEx = function() {
+
+    const getPostalCodeRegEx = () => {
       debug('call:getPostalCodeRegEx()');
+
       return postalCodeRegEx;
     };
-    hasCallingCode = function(value) {
+
+    const hasCallingCode = (value) => {
       debug('call:hasCallingCode(%o)', value);
-      value = sanitizeCallingCode(value);
-      value = _.first(value);
-      return ((value == null) && (callingCode == null)) || _.contains(callingCode, value);
+      value = _.first(sanitizeCallingCode(value));
+
+      return (value == null && callingCode == null)
+          || _.contains(callingCode, value);
     };
-    hasAnyCallingCodes = function(...args) {
+
+    const hasAnyCallingCodes = (...args) => {
       debug('call:hasAnyCallingCodes(%o)', args);
       args = sanitizeCallingCode(...args);
+
       return _.any(args, hasCallingCode);
     };
-    hasAllCallingCodes = function(...args) {
+
+    const hasAllCallingCodes = (...args) => {
       debug('call:hasAllCallingCodes(%o)', args);
       args = sanitizeCallingCode(...args);
+
       return _.all(args, hasCallingCode);
     };
-    addCallingCode = function(...args) {
+
+    const addCallingCode = (...args) => {
       debug('call:addCallingCode(%o)', args);
       args = sanitizeCallingCode(...args);
+
       debug('before:add:callingCode = %o', callingCode);
       if (args == null) {
         callingCode = args;
-      } else if (args != null ? args.length : void 0) {
+      } else if (args.length) {
         callingCode = _.union(callingCode, args);
       }
+
       debug('after:add:callingCode = %o', callingCode);
+
       return this;
     };
-    removeCallingCode = function(...args) {
+
+    const removeCallingCode = (...args) => {
       debug('call:removeCallingCode(%o)', args);
       args = sanitizeCallingCode(...args);
+
       debug('before:remove:callingCode = %o', callingCode);
       callingCode = _.without(callingCode, ...args);
-      if (!(callingCode != null ? callingCode.length : void 0)) {
-        callingCode = void 0;
+
+      if (!callingCode.length) {
+        callingCode = undefined;
       }
+
       debug('after:remove:callingCode = %o', callingCode);
+
       return this;
     };
-    setCallingCode = function(...args) {
+
+    const setCallingCode = (...args) => {
       debug('call:setCallingCode(%o)', args);
       debug('before:reset:callingCode = %o', callingCode);
-      callingCode = void 0;
+      callingCode = undefined;
+
       this.addCallingCode(...args);
+
       return this;
     };
-    getCallingCode = function() {
+
+    const getCallingCode = () => {
       debug('call:getCallingCode()');
+
       return _.clone(callingCode);
     };
-    sanitizeCallingCode = function(...args) {
+
+    const sanitizeCallingCode = (...args) => {
       debug('call:sanitizeCallingCode(%o)', args);
       args = _.flatten(args);
-      //Check for null or undefined to set the callingCode
-      if ((args != null ? args.length : void 0) < 2 && ((args != null ? args[0] : void 0) == null)) {
-        debug('sanitized:callingCode = %o', args != null ? args[0] : void 0);
-        return args != null ? args[0] : void 0;
+
+      // Check for null or undefined to set the callingCode
+      if (args.length < 2 && _.first(args) == null) {
+        debug('sanitized:callingCode = %o', _.first(args));
+
+        return _.first(args);
       }
-      args = _.map(args, function(value) {
-        value = (value != null ? typeof value.toString === "function" ? value.toString().trim() : void 0 : void 0) || '';
-        value = value.replace(/^\+*\s*/, '+');
-        value = value.replace(/\s+/, ' ');
+
+      args = _.map(args, (value) => {
+        value = (value && (value.toString() || `${value}`).trim()) || '';
+        value = value
+          .replace(/^\+*\s*/, '+')
+          .replace(/\s+/, ' ');
+
         if (!/^\+[1-9][\s\d]*$/.test(value)) {
           debug('error:callingCode = %o', value);
+
           throw new TypeError('callingCode must be digits with optional space');
         }
+
         return value;
       });
+
       debug('sanitized:callingCode = %o', args);
+
       return args;
     };
-    set = function(opt = {}) {
-      var key, value;
+
+    const set = (opt = {}) => {
       debug('call:set(%o)', opt);
-      for (key in opt) {
-        value = opt[key];
-        this[key] = value;
+
+      for (const key in opt) {
+        this[key] = opt[key];
       }
+
       return this;
     };
-    get = function(...args) {
+
+    const get = (...args) => {
       debug('call:get(%o)', args);
+
       args = _.flatten(args);
+
       return _.pick(this, ...args);
     };
-    isValidPostalCode = function(value) {
-      var ref;
+
+    const isValidPostalCode = (value) => {
       debug('call:isValidPostalCode(%o)', value);
-      return ((this.postalCodeRegEx == null) && (value == null)) || !!((ref = this.postalCodeRegEx) != null ? typeof ref.test === "function" ? ref.test(value) : void 0 : void 0);
+
+      return (this.postalCodeRegEx == null && value == null)
+          || (this.postalCodeRegEx && this.postalCodeRegEx.test(value));
     };
+
     Object.defineProperties(this, {
       VERSION: {
         enumerable: false,
         writable: false,
-        value: version
+        value: version,
       },
       name: {
         enumerable: true,
         get: getName,
-        set: setName
+        set: setName,
       },
       getName: {
         writable: false,
-        value: getName
+        value: getName,
       },
       get_name: {
         writable: false,
-        value: getName
+        value: getName,
       },
       setName: {
         writable: false,
-        value: setName
+        value: setName,
       },
       set_name: {
         writable: false,
-        value: setName
+        value: setName,
       },
       iso2Code: {
         enumerable: true,
         get: getIso2Code,
-        set: setIso2Code
+        set: setIso2Code,
       },
       iso2code: {
         enumerable: false,
         get: getIso2Code,
-        set: setIso2Code
+        set: setIso2Code,
       },
       iso_2_code: {
         enumerable: false,
         get: getIso2Code,
-        set: setIso2Code
+        set: setIso2Code,
       },
       iso2: {
         enumerable: false,
         get: getIso2Code,
-        set: setIso2Code
+        set: setIso2Code,
       },
       iso_2: {
         enumerable: false,
         get: getIso2Code,
-        set: setIso2Code
+        set: setIso2Code,
       },
       alpha2Code: {
         enumerable: false,
         get: getIso2Code,
-        set: setIso2Code
+        set: setIso2Code,
       },
       alpha2code: {
         enumerable: false,
         get: getIso2Code,
-        set: setIso2Code
+        set: setIso2Code,
       },
       alpha_2_code: {
         enumerable: false,
         get: getIso2Code,
-        set: setIso2Code
+        set: setIso2Code,
       },
       alpha2: {
         enumerable: false,
         get: getIso2Code,
-        set: setIso2Code
+        set: setIso2Code,
       },
       alpha_2: {
         enumerable: false,
         get: getIso2Code,
-        set: setIso2Code
+        set: setIso2Code,
       },
       getIso2Code: {
         writable: false,
-        value: getIso2Code
+        value: getIso2Code,
       },
       get_iso_2_code: {
         writable: false,
-        value: getIso2Code
+        value: getIso2Code,
       },
       getAlpha2Code: {
         writable: false,
-        value: getIso2Code
+        value: getIso2Code,
       },
       get_alpha_2_code: {
         writable: false,
-        value: getIso2Code
+        value: getIso2Code,
       },
       setIso2Code: {
         writable: false,
-        value: setIso2Code
+        value: setIso2Code,
       },
       set_iso_2_code: {
         writable: false,
-        value: setIso2Code
+        value: setIso2Code,
       },
       setAlpha2Code: {
         writable: false,
-        value: setIso2Code
+        value: setIso2Code,
       },
       set_alpha_2_code: {
         writable: false,
-        value: setIso2Code
+        value: setIso2Code,
       },
       iso3Code: {
         enumerable: true,
         get: getIso3Code,
-        set: setIso3Code
+        set: setIso3Code,
       },
       iso3code: {
         enumerable: false,
         get: getIso3Code,
-        set: setIso3Code
+        set: setIso3Code,
       },
       iso_3_code: {
         enumerable: false,
         get: getIso3Code,
-        set: setIso3Code
+        set: setIso3Code,
       },
       iso3: {
         enumerable: false,
         get: getIso3Code,
-        set: setIso3Code
+        set: setIso3Code,
       },
       iso_3: {
         enumerable: false,
         get: getIso3Code,
-        set: setIso3Code
+        set: setIso3Code,
       },
       alpha3Code: {
         enumerable: false,
         get: getIso3Code,
-        set: setIso3Code
+        set: setIso3Code,
       },
       alpha3code: {
         enumerable: false,
         get: getIso3Code,
-        set: setIso3Code
+        set: setIso3Code,
       },
       alpha_3_code: {
         enumerable: false,
         get: getIso3Code,
-        set: setIso3Code
+        set: setIso3Code,
       },
       alpha3: {
         enumerable: false,
         get: getIso3Code,
-        set: setIso3Code
+        set: setIso3Code,
       },
       alpha_3: {
         enumerable: false,
         get: getIso3Code,
-        set: setIso3Code
+        set: setIso3Code,
       },
       getIso3Code: {
         writable: false,
-        value: getIso3Code
+        value: getIso3Code,
       },
       get_iso_3_code: {
         writable: false,
-        value: getIso3Code
+        value: getIso3Code,
       },
       getAlpha3Code: {
         writable: false,
-        value: getIso3Code
+        value: getIso3Code,
       },
       get_alpha_3_code: {
         writable: false,
-        value: getIso3Code
+        value: getIso3Code,
       },
       setIso3Code: {
         writable: false,
-        value: setIso3Code
+        value: setIso3Code,
       },
       set_iso_3_code: {
         writable: false,
-        value: setIso3Code
+        value: setIso3Code,
       },
       setAlpha3Code: {
         writable: false,
-        value: setIso3Code
+        value: setIso3Code,
       },
       set_alpha_3_code: {
         writable: false,
-        value: setIso3Code
+        value: setIso3Code,
       },
       isoNumericCode: {
         enumerable: true,
         get: getIsoNumericCode,
-        set: setIsoNumericCode
+        set: setIsoNumericCode,
       },
       isoNumeric: {
         enumerable: false,
         get: getIsoNumericCode,
-        set: setIsoNumericCode
+        set: setIsoNumericCode,
       },
       iso_numeric: {
         enumerable: false,
         get: getIsoNumericCode,
-        set: setIsoNumericCode
+        set: setIsoNumericCode,
       },
       isoId: {
         enumerable: false,
         get: getIsoNumericCode,
-        set: setIsoNumericCode
+        set: setIsoNumericCode,
       },
       iso_id: {
         enumerable: false,
         get: getIsoNumericCode,
-        set: setIsoNumericCode
+        set: setIsoNumericCode,
       },
       numericCode: {
         enumerable: false,
         get: getIsoNumericCode,
-        set: setIsoNumericCode
+        set: setIsoNumericCode,
       },
       numericcode: {
         enumerable: false,
         get: getIsoNumericCode,
-        set: setIsoNumericCode
+        set: setIsoNumericCode,
       },
       numeric_code: {
         enumerable: false,
         get: getIsoNumericCode,
-        set: setIsoNumericCode
+        set: setIsoNumericCode,
       },
       id: {
         enumerable: false,
         get: getIsoNumericCode,
-        set: setIsoNumericCode
+        set: setIsoNumericCode,
       },
       getIsoNumericCode: {
         writable: false,
-        value: getIsoNumericCode
+        value: getIsoNumericCode,
       },
       getIsoId: {
         writable: false,
-        value: getIsoNumericCode
+        value: getIsoNumericCode,
       },
       getNumericCode: {
         writable: false,
-        value: getIsoNumericCode
+        value: getIsoNumericCode,
       },
       getId: {
         writable: false,
-        value: getIsoNumericCode
+        value: getIsoNumericCode,
       },
       get_iso_numeric_code: {
         writable: false,
-        value: getIsoNumericCode
+        value: getIsoNumericCode,
       },
       get_iso_id: {
         writable: false,
-        value: getIsoNumericCode
+        value: getIsoNumericCode,
       },
       get_numeric_code: {
         writable: false,
-        value: getIsoNumericCode
+        value: getIsoNumericCode,
       },
       get_id: {
         writable: false,
-        value: getIsoNumericCode
+        value: getIsoNumericCode,
       },
       setIsoNumericCode: {
         writable: false,
-        value: setIsoNumericCode
+        value: setIsoNumericCode,
       },
       setIsoId: {
         writable: false,
-        value: setIsoNumericCode
+        value: setIsoNumericCode,
       },
       setNumericCode: {
         writable: false,
-        value: setIsoNumericCode
+        value: setIsoNumericCode,
       },
       setId: {
         writable: false,
-        value: setIsoNumericCode
+        value: setIsoNumericCode,
       },
       set_iso_numeric_code: {
         writable: false,
-        value: setIsoNumericCode
+        value: setIsoNumericCode,
       },
       set_numeric_code: {
         writable: false,
-        value: setIsoNumericCode
+        value: setIsoNumericCode,
       },
       set_iso_id: {
         writable: false,
-        value: setIsoNumericCode
+        value: setIsoNumericCode,
       },
       set_id: {
         writable: false,
-        value: setIsoNumericCode
+        value: setIsoNumericCode,
       },
       postalCodeRegEx: {
         enumerable: false,
         get: getPostalCodeRegEx,
-        set: setPostalCodeRegEx
+        set: setPostalCodeRegEx,
       },
       postalCodeRegExp: {
         enumerable: false,
         get: getPostalCodeRegEx,
-        set: getPostalCodeRegEx
+        set: getPostalCodeRegEx,
       },
       postalcoderegex: {
         enumerable: false,
         get: getPostalCodeRegEx,
-        set: getPostalCodeRegEx
+        set: getPostalCodeRegEx,
       },
       postalcoderegexp: {
         enumerable: false,
         get: getPostalCodeRegEx,
-        set: getPostalCodeRegEx
+        set: getPostalCodeRegEx,
       },
       postal_code_reg_ex: {
         enumerable: false,
         get: getPostalCodeRegEx,
-        set: setPostalCodeRegEx
+        set: setPostalCodeRegEx,
       },
       postal_code_reg_exp: {
         enumerable: false,
         get: getPostalCodeRegEx,
-        set: setPostalCodeRegEx
+        set: setPostalCodeRegEx,
       },
       getPostalCodeRegEx: {
         writable: false,
-        value: getPostalCodeRegEx
+        value: getPostalCodeRegEx,
       },
       getPostalCodeRegExp: {
         writable: false,
-        value: getPostalCodeRegEx
+        value: getPostalCodeRegEx,
       },
       get_postal_code_reg_ex: {
         writable: false,
-        value: getPostalCodeRegEx
+        value: getPostalCodeRegEx,
       },
       get_postal_code_reg_exp: {
         writable: false,
-        value: getPostalCodeRegEx
+        value: getPostalCodeRegEx,
       },
       setPostalCodeRegEx: {
         writable: false,
-        value: setPostalCodeRegEx
+        value: setPostalCodeRegEx,
       },
       setPostalCodeRegExp: {
         writable: false,
-        value: setPostalCodeRegEx
+        value: setPostalCodeRegEx,
       },
       set_postal_code_reg_ex: {
         writable: false,
-        value: setPostalCodeRegEx
+        value: setPostalCodeRegEx,
       },
       set_postal_code_reg_exp: {
         writable: false,
-        value: setPostalCodeRegEx
+        value: setPostalCodeRegEx,
       },
       callingCode: {
         enumerable: true,
         get: getCallingCode,
-        set: setCallingCode
+        set: setCallingCode,
       },
       callingCodes: {
         enumerable: false,
         get: getCallingCode,
-        set: setCallingCode
+        set: setCallingCode,
       },
       callingcode: {
         enumerable: false,
         get: getCallingCode,
-        set: setCallingCode
+        set: setCallingCode,
       },
       callingcodes: {
         enumerable: false,
         get: getCallingCode,
-        set: setCallingCode
+        set: setCallingCode,
       },
       calling_code: {
         enumerable: false,
         get: getCallingCode,
-        set: setCallingCode
+        set: setCallingCode,
       },
       calling_codes: {
         enumerable: false,
         get: getCallingCode,
-        set: setCallingCode
+        set: setCallingCode,
       },
       getCallingCode: {
         writable: false,
-        value: getCallingCode
+        value: getCallingCode,
       },
       get_calling_code: {
         writable: false,
-        value: getCallingCode
+        value: getCallingCode,
       },
       setCallingCode: {
         writable: false,
-        value: setCallingCode
+        value: setCallingCode,
       },
       set_calling_code: {
         writable: false,
-        value: setCallingCode
+        value: setCallingCode,
       },
       addCallingCode: {
         writable: false,
-        value: addCallingCode
+        value: addCallingCode,
       },
       add_calling_code: {
         writable: false,
-        value: addCallingCode
+        value: addCallingCode,
       },
       removeCallingCode: {
         writable: false,
-        value: removeCallingCode
+        value: removeCallingCode,
       },
       remove_calling_code: {
         writable: false,
-        value: removeCallingCode
+        value: removeCallingCode,
       },
       hasCallingCode: {
         writable: false,
-        value: hasCallingCode
+        value: hasCallingCode,
       },
       has_calling_code: {
         writable: false,
-        value: hasCallingCode
+        value: hasCallingCode,
       },
       hasAnyCallingCodes: {
         writable: false,
-        value: hasAnyCallingCodes
+        value: hasAnyCallingCodes,
       },
       has_any_calling_codes: {
         writable: false,
-        value: hasAnyCallingCodes
+        value: hasAnyCallingCodes,
       },
       hasAllCallingCodes: {
         writable: false,
-        value: hasAllCallingCodes
+        value: hasAllCallingCodes,
       },
       has_all_calling_codes: {
         writable: false,
-        value: hasAllCallingCodes
+        value: hasAllCallingCodes,
       },
       get: {
         writable: false,
-        value: get
+        value: get,
       },
       set: {
         writable: false,
-        value: set
+        value: set,
       },
       isValidPostalCode: {
         writable: false,
-        value: isValidPostalCode
+        value: isValidPostalCode,
       },
       isPostalCodeValid: {
         writable: false,
-        value: isValidPostalCode
+        value: isValidPostalCode,
       },
       is_valid_postal_code: {
         writable: false,
-        value: isValidPostalCode
+        value: isValidPostalCode,
       },
       is_postal_code_valid: {
         writable: false,
-        value: isValidPostalCode
-      }
+        value: isValidPostalCode,
+      },
+      [Symbol.toStringTag]: {
+        writable: false,
+        value: '@scuba-squad/country',
+      },
     });
-    Object.seal(this);
+
+    Object.freeze(this);
+
     return this.set(opt);
   };
 
-  Country.getByIso2Code = function(value) {
+  // static getByIso2Code method
+  Country.getByIso2Code = (value) => {
     debug('call:Country.getByIso2Code(%o)', value);
-    value = _.findWhere(countries, {
-      iso2Code: value
-    });
-    debug('db:found %o', value);
-    return (value && new Country(value)) || false;
-  };
 
-  Country.getByIso3Code = function(value) {
+    value = _.findWhere(countries, {
+      iso2Code: value,
+    });
+
+    debug('db:found %o', value);
+
+    return (value && new Country(value)) || false;
+  }; // end Country.getByIso2Code
+
+  // static getByIso3Code method
+  Country.getByIso3Code = (value) => {
     debug('call:Country.getByIso3Code(%o)', value);
-    value = _.findWhere(countries, {
-      iso3Code: value
-    });
-    debug('db:found %o', value);
-    return (value && new Country(value)) || false;
-  };
 
-  Country.getByIsoNumericCode = function(value) {
+    value = _.findWhere(countries, {
+      iso3Code: value,
+    });
+
+    debug('db:found %o', value);
+
+    return (value && new Country(value)) || false;
+  }; // end Country.getByIso3Code
+
+  // static getByIsoNumericCode method
+  Country.getByIsoNumericCode = (value) => {
     debug('call:Country.getByIsoNumericCode(%o)', value);
-    value = _.findWhere(countries, {
-      isoNumericCode: value
-    });
-    debug('db:found %o', value);
-    return (value && new Country(value)) || false;
-  };
 
-  Country.getByPostalCode = function(value) {
-    var filtered;
+    value = _.findWhere(countries, {
+      isoNumericCode: value,
+    });
+
+    debug('db:found %o', value);
+
+    return (value && new Country(value)) || false;
+  }; // end Country.getByIsoNumericCode
+
+  // static getByCallingCode method
+  Country.getByPostalCode = (value) => {
     debug('call:Country.getByPostalCode(%o)', value);
-    filtered = _.filter(countries, function(country) {
-      if ((value == null) && ((country != null ? country.postalCodeRegEx : void 0) == null)) {
+
+    const filtered = _.filter(countries, (country) => {
+      if (value == null && country.postalCodeRegEx == null) {
         return true;
       }
+
       if (new Country(country).isValidPostalCode(value)) {
         return true;
       }
+
       return false;
     });
-    debug('db:found %o', filtered);
-    return ((filtered != null ? filtered.length : void 0) && _.map(filtered, Country)) || false;
-  };
 
-  Country.getByCallingCode = function(value) {
-    var filtered;
+    debug('db:found %o', filtered);
+
+    return (filtered && filtered.length && _.map(filtered, Country)) || false;
+  }; // end Country.getByPostalCode
+
+  // static getByCallingCode method
+  Country.getByCallingCode = (value) => {
     debug('call:Country.getByCallingCode(%o)', value);
-    filtered = _.filter(countries, function(country) {
+
+    const filtered = _.filter(countries, (country) => {
       return new Country(country).hasCallingCode(value);
     });
+
     debug('db:found %o', filtered);
-    return ((filtered != null ? filtered.length : void 0) && _.map(filtered, Country)) || false;
-  };
 
+    return (filtered && filtered.length && _.map(filtered, Country)) || false;
+  }; // end Country.getByCallingCode
+
+  // export Country as a commonjs module
   module.exports = Country;
-
-}).call(this);
+})(); // end IIFE
