@@ -739,8 +739,22 @@ country.isValidPostalCode('123456'); // false
 country.isValidPostalCode('123e5'); // false
 ```
 
+#### `Country[Symbol.toStringTag]: string`
+**Added in:** v1.1.0
+
+**returns:** string
+
+```javascript
+const Country = require('@scuba-squad/country');
+
+let country = new Country();
+country[Symbol.toStringTag]; // '@scuba-squad/country'
+Object.prototype.toString.call(country); // '[object @scuba-squad/country]'
+```
+
 <a name="test"></a>
 ## Test
+[tests](TEST)
 ```bash
 npm install
 npm test
