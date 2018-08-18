@@ -1,17 +1,19 @@
-(function() {
-  var countries, unit;
+'use strict';
 
-  unit = require('unit.js');
+(() => {
+  // include dependencies
+  const unit = require('unit.js');
+  const countries = require('../countries');
 
-  countries = require('../countries');
-
-  describe('countries', function() {
-    return it('should be an array of v object literals', function() {
-      unit.array(countries).hasLength(249).matchEach(function(v) {
-        return !!(v.name && v.iso2Code && v.iso3Code && v.isoNumericCode);
-      });
-      return null;
-    });
-  });
-
-}).call(this);
+  // describe countries
+  describe('countries', () => {
+    it('should be an array of object literals', () => {
+      unit
+        .array(countries)
+        .hasLength(249)
+        .matchEach((v) => {
+          return !!(v.name && v.iso2Code && v.iso3Code && v.isoNumericCode);
+        });
+    }); // end it
+  }); // end describe countries
+})(); // end IIFE
