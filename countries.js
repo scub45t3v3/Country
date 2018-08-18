@@ -1,15 +1,18 @@
-(function() {
-  var _, countries;
+'use strict';
 
-  _ = require('underscore');
+(() => {
+  // include dependencies
+  const _ = require('underscore');
+  const db = require('@scuba-squad/country-db');
 
-  countries = require('@scuba-squad/country-db');
-
-  module.exports = _.map(countries, function(country) {
+  const countries = _.map(db, (country) => {
     if (country.postalCodeRegEx) {
       country.postalCodeRegEx = new RegExp(`^${country.postalCodeRegEx}$`, 'i');
     }
+
     return country;
   });
 
-}).call(this);
+  // export as commonjs module
+  module.exports = countries;
+})(); // end IIFE
