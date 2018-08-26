@@ -3,6 +3,7 @@
 <a name="status"></a>
 ## Status
 [![Build Status](https://travis-ci.org/scub45t3v3/Country.svg?branch=master)](https://travis-ci.org/scub45t3v3/Country)
+[![Coverage Status](https://coveralls.io/repos/github/scub45t3v3/Country/badge.svg)](https://coveralls.io/github/scub45t3v3/Country)
 
 <a name="toc"></a>
 ## Table of Content
