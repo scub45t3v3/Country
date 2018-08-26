@@ -754,7 +754,7 @@ Object.prototype.toString.call(country); // '[object @scuba-squad/country]'
 
 <a name="test"></a>
 ## Test
-[tests](TEST)
+[tests](TEST.md)
 ```bash
 npm install
 npm test
