@@ -28,13 +28,7 @@
 
     const setName = (value) => {
       debug('call:setName(%o)', value);
-      value = value && (value.toString() || `${value}`).trim();
-
-      if (value != null && !_.isString(value)) {
-        debug('error:name = %o', value);
-
-        throw new TypeError('name must be a string');
-      }
+      value = value && `${value}`.trim();
 
       debug('before:set:name = %s', name);
       name = value || undefined;
@@ -51,7 +45,7 @@
 
     const setIso2Code = (value) => {
       debug('call:setIso2Code(%o)', value);
-      value = value && (value.toString() || `${value}`).trim().toUpperCase();
+      value = value && `${value}`.trim().toUpperCase();
 
       if ((value != null) && !/^[a-z]{2}$/i.test(value)) {
         debug('error:iso2Code = %o', value);
@@ -74,7 +68,7 @@
 
     const setIso3Code = (value) => {
       debug('call:setIso3Code(%o)', value);
-      value = value && (value.toString() || `${value}`).trim().toUpperCase();
+      value = value && `${value}`.trim().toUpperCase();
 
       if ((value != null) && !/^[a-z]{3}$/i.test(value)) {
         debug('error:iso3Code = %o', value);
@@ -97,7 +91,7 @@
 
     const setIsoNumericCode = (value) => {
       debug('call:setIsoNumericCode(%o)', value);
-      value = value && (value.toString() || `${value}`).trim();
+      value = value && `${value}`.trim();
 
       if (value != null && value != '000' && !/^\d{3}$/.test(value)) {
         debug('error:isoNumericCode = %o', value);
@@ -222,7 +216,7 @@
       }
 
       args = _.map(args, (value) => {
-        value = (value && (value.toString() || `${value}`).trim()) || '';
+        value = (value && `${value}`.trim()) || '';
         value = value
           .replace(/^\+*\s*/, '+')
           .replace(/\s+/, ' ');
