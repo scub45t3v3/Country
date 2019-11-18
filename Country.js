@@ -274,15 +274,7 @@ const Country = function(opt = {}) {
       writable: false,
       value: getName,
     },
-    get_name: {
-      writable: false,
-      value: getName,
-    },
     setName: {
-      writable: false,
-      value: setName,
-    },
-    set_name: {
       writable: false,
       value: setName,
     },
@@ -291,80 +283,11 @@ const Country = function(opt = {}) {
       get: getIso2Code,
       set: setIso2Code,
     },
-    iso2code: {
-      enumerable: false,
-      get: getIso2Code,
-      set: setIso2Code,
-    },
-    iso_2_code: {
-      enumerable: false,
-      get: getIso2Code,
-      set: setIso2Code,
-    },
-    iso2: {
-      enumerable: false,
-      get: getIso2Code,
-      set: setIso2Code,
-    },
-    iso_2: {
-      enumerable: false,
-      get: getIso2Code,
-      set: setIso2Code,
-    },
-    alpha2Code: {
-      enumerable: false,
-      get: getIso2Code,
-      set: setIso2Code,
-    },
-    alpha2code: {
-      enumerable: false,
-      get: getIso2Code,
-      set: setIso2Code,
-    },
-    alpha_2_code: {
-      enumerable: false,
-      get: getIso2Code,
-      set: setIso2Code,
-    },
-    alpha2: {
-      enumerable: false,
-      get: getIso2Code,
-      set: setIso2Code,
-    },
-    alpha_2: {
-      enumerable: false,
-      get: getIso2Code,
-      set: setIso2Code,
-    },
     getIso2Code: {
       writable: false,
       value: getIso2Code,
     },
-    get_iso_2_code: {
-      writable: false,
-      value: getIso2Code,
-    },
-    getAlpha2Code: {
-      writable: false,
-      value: getIso2Code,
-    },
-    get_alpha_2_code: {
-      writable: false,
-      value: getIso2Code,
-    },
     setIso2Code: {
-      writable: false,
-      value: setIso2Code,
-    },
-    set_iso_2_code: {
-      writable: false,
-      value: setIso2Code,
-    },
-    setAlpha2Code: {
-      writable: false,
-      value: setIso2Code,
-    },
-    set_alpha_2_code: {
       writable: false,
       value: setIso2Code,
     },
@@ -373,80 +296,11 @@ const Country = function(opt = {}) {
       get: getIso3Code,
       set: setIso3Code,
     },
-    iso3code: {
-      enumerable: false,
-      get: getIso3Code,
-      set: setIso3Code,
-    },
-    iso_3_code: {
-      enumerable: false,
-      get: getIso3Code,
-      set: setIso3Code,
-    },
-    iso3: {
-      enumerable: false,
-      get: getIso3Code,
-      set: setIso3Code,
-    },
-    iso_3: {
-      enumerable: false,
-      get: getIso3Code,
-      set: setIso3Code,
-    },
-    alpha3Code: {
-      enumerable: false,
-      get: getIso3Code,
-      set: setIso3Code,
-    },
-    alpha3code: {
-      enumerable: false,
-      get: getIso3Code,
-      set: setIso3Code,
-    },
-    alpha_3_code: {
-      enumerable: false,
-      get: getIso3Code,
-      set: setIso3Code,
-    },
-    alpha3: {
-      enumerable: false,
-      get: getIso3Code,
-      set: setIso3Code,
-    },
-    alpha_3: {
-      enumerable: false,
-      get: getIso3Code,
-      set: setIso3Code,
-    },
     getIso3Code: {
       writable: false,
       value: getIso3Code,
     },
-    get_iso_3_code: {
-      writable: false,
-      value: getIso3Code,
-    },
-    getAlpha3Code: {
-      writable: false,
-      value: getIso3Code,
-    },
-    get_alpha_3_code: {
-      writable: false,
-      value: getIso3Code,
-    },
     setIso3Code: {
-      writable: false,
-      value: setIso3Code,
-    },
-    set_iso_3_code: {
-      writable: false,
-      value: setIso3Code,
-    },
-    setAlpha3Code: {
-      writable: false,
-      value: setIso3Code,
-    },
-    set_alpha_3_code: {
       writable: false,
       value: setIso3Code,
     },
@@ -455,107 +309,11 @@ const Country = function(opt = {}) {
       get: getIsoNumericCode,
       set: setIsoNumericCode,
     },
-    isoNumeric: {
-      enumerable: false,
-      get: getIsoNumericCode,
-      set: setIsoNumericCode,
-    },
-    iso_numeric: {
-      enumerable: false,
-      get: getIsoNumericCode,
-      set: setIsoNumericCode,
-    },
-    isoId: {
-      enumerable: false,
-      get: getIsoNumericCode,
-      set: setIsoNumericCode,
-    },
-    iso_id: {
-      enumerable: false,
-      get: getIsoNumericCode,
-      set: setIsoNumericCode,
-    },
-    numericCode: {
-      enumerable: false,
-      get: getIsoNumericCode,
-      set: setIsoNumericCode,
-    },
-    numericcode: {
-      enumerable: false,
-      get: getIsoNumericCode,
-      set: setIsoNumericCode,
-    },
-    numeric_code: {
-      enumerable: false,
-      get: getIsoNumericCode,
-      set: setIsoNumericCode,
-    },
-    id: {
-      enumerable: false,
-      get: getIsoNumericCode,
-      set: setIsoNumericCode,
-    },
     getIsoNumericCode: {
       writable: false,
       value: getIsoNumericCode,
     },
-    getIsoId: {
-      writable: false,
-      value: getIsoNumericCode,
-    },
-    getNumericCode: {
-      writable: false,
-      value: getIsoNumericCode,
-    },
-    getId: {
-      writable: false,
-      value: getIsoNumericCode,
-    },
-    get_iso_numeric_code: {
-      writable: false,
-      value: getIsoNumericCode,
-    },
-    get_iso_id: {
-      writable: false,
-      value: getIsoNumericCode,
-    },
-    get_numeric_code: {
-      writable: false,
-      value: getIsoNumericCode,
-    },
-    get_id: {
-      writable: false,
-      value: getIsoNumericCode,
-    },
     setIsoNumericCode: {
-      writable: false,
-      value: setIsoNumericCode,
-    },
-    setIsoId: {
-      writable: false,
-      value: setIsoNumericCode,
-    },
-    setNumericCode: {
-      writable: false,
-      value: setIsoNumericCode,
-    },
-    setId: {
-      writable: false,
-      value: setIsoNumericCode,
-    },
-    set_iso_numeric_code: {
-      writable: false,
-      value: setIsoNumericCode,
-    },
-    set_numeric_code: {
-      writable: false,
-      value: setIsoNumericCode,
-    },
-    set_iso_id: {
-      writable: false,
-      value: setIsoNumericCode,
-    },
-    set_id: {
       writable: false,
       value: setIsoNumericCode,
     },
@@ -564,60 +322,11 @@ const Country = function(opt = {}) {
       get: getPostalCodeRegEx,
       set: setPostalCodeRegEx,
     },
-    postalCodeRegExp: {
-      enumerable: false,
-      get: getPostalCodeRegEx,
-      set: getPostalCodeRegEx,
-    },
-    postalcoderegex: {
-      enumerable: false,
-      get: getPostalCodeRegEx,
-      set: getPostalCodeRegEx,
-    },
-    postalcoderegexp: {
-      enumerable: false,
-      get: getPostalCodeRegEx,
-      set: getPostalCodeRegEx,
-    },
-    postal_code_reg_ex: {
-      enumerable: false,
-      get: getPostalCodeRegEx,
-      set: setPostalCodeRegEx,
-    },
-    postal_code_reg_exp: {
-      enumerable: false,
-      get: getPostalCodeRegEx,
-      set: setPostalCodeRegEx,
-    },
     getPostalCodeRegEx: {
       writable: false,
       value: getPostalCodeRegEx,
     },
-    getPostalCodeRegExp: {
-      writable: false,
-      value: getPostalCodeRegEx,
-    },
-    get_postal_code_reg_ex: {
-      writable: false,
-      value: getPostalCodeRegEx,
-    },
-    get_postal_code_reg_exp: {
-      writable: false,
-      value: getPostalCodeRegEx,
-    },
     setPostalCodeRegEx: {
-      writable: false,
-      value: setPostalCodeRegEx,
-    },
-    setPostalCodeRegExp: {
-      writable: false,
-      value: setPostalCodeRegEx,
-    },
-    set_postal_code_reg_ex: {
-      writable: false,
-      value: setPostalCodeRegEx,
-    },
-    set_postal_code_reg_exp: {
       writable: false,
       value: setPostalCodeRegEx,
     },
@@ -626,36 +335,7 @@ const Country = function(opt = {}) {
       get: getCallingCode,
       set: setCallingCode,
     },
-    callingCodes: {
-      enumerable: false,
-      get: getCallingCode,
-      set: setCallingCode,
-    },
-    callingcode: {
-      enumerable: false,
-      get: getCallingCode,
-      set: setCallingCode,
-    },
-    callingcodes: {
-      enumerable: false,
-      get: getCallingCode,
-      set: setCallingCode,
-    },
-    calling_code: {
-      enumerable: false,
-      get: getCallingCode,
-      set: setCallingCode,
-    },
-    calling_codes: {
-      enumerable: false,
-      get: getCallingCode,
-      set: setCallingCode,
-    },
     getCallingCode: {
-      writable: false,
-      value: getCallingCode,
-    },
-    get_calling_code: {
       writable: false,
       value: getCallingCode,
     },
@@ -663,15 +343,7 @@ const Country = function(opt = {}) {
       writable: false,
       value: setCallingCode,
     },
-    set_calling_code: {
-      writable: false,
-      value: setCallingCode,
-    },
     addCallingCode: {
-      writable: false,
-      value: addCallingCode,
-    },
-    add_calling_code: {
       writable: false,
       value: addCallingCode,
     },
@@ -679,15 +351,7 @@ const Country = function(opt = {}) {
       writable: false,
       value: removeCallingCode,
     },
-    remove_calling_code: {
-      writable: false,
-      value: removeCallingCode,
-    },
     hasCallingCode: {
-      writable: false,
-      value: hasCallingCode,
-    },
-    has_calling_code: {
       writable: false,
       value: hasCallingCode,
     },
@@ -695,15 +359,7 @@ const Country = function(opt = {}) {
       writable: false,
       value: hasAnyCallingCodes,
     },
-    has_any_calling_codes: {
-      writable: false,
-      value: hasAnyCallingCodes,
-    },
     hasAllCallingCodes: {
-      writable: false,
-      value: hasAllCallingCodes,
-    },
-    has_all_calling_codes: {
       writable: false,
       value: hasAllCallingCodes,
     },
@@ -716,18 +372,6 @@ const Country = function(opt = {}) {
       value: set,
     },
     isValidPostalCode: {
-      writable: false,
-      value: isValidPostalCode,
-    },
-    isPostalCodeValid: {
-      writable: false,
-      value: isValidPostalCode,
-    },
-    is_valid_postal_code: {
-      writable: false,
-      value: isValidPostalCode,
-    },
-    is_postal_code_valid: {
       writable: false,
       value: isValidPostalCode,
     },
