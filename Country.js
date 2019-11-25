@@ -12,8 +12,6 @@ const Country = function(opt = {}) {
 
   // define auto instantiation
   if (!new.target) {
-    debug('re-call:Country with new operator');
-
     return new Country(opt);
   }
 
@@ -28,10 +26,7 @@ const Country = function(opt = {}) {
   const setName = (value) => {
     debug('call:setName(%o)', value);
     value = value && `${value}`.trim();
-
-    debug('before:set:name = %s', name);
     name = value || undefined;
-    debug('after:set:name = %s', name);
 
     return this;
   };
@@ -47,14 +42,10 @@ const Country = function(opt = {}) {
     value = value && `${value}`.trim().toUpperCase();
 
     if ((value != null) && !/^[a-z]{2}$/i.test(value)) {
-      debug('error:iso2Code = %o', value);
-
       throw new TypeError('iso2Code must be 2 char alpha string');
     }
 
-    debug('before:set:iso2Code = %s', iso2Code);
     iso2Code = value || undefined;
-    debug('after:set:iso2Code = %s', iso2Code);
 
     return this;
   };
@@ -70,14 +61,10 @@ const Country = function(opt = {}) {
     value = value && `${value}`.trim().toUpperCase();
 
     if ((value != null) && !/^[a-z]{3}$/i.test(value)) {
-      debug('error:iso3Code = %o', value);
-
       throw new TypeError('iso3Code must be 3 char alpha string');
     }
 
-    debug('before:set:iso3Code = %s', iso3Code);
     iso3Code = value || undefined;
-    debug('after:set:iso3Code = %s', iso3Code);
 
     return this;
   };
@@ -93,14 +80,10 @@ const Country = function(opt = {}) {
     value = value && `${value}`.trim();
 
     if (value != null && value != '000' && !/^\d{3}$/.test(value)) {
-      debug('error:isoNumericCode = %o', value);
-
       throw new TypeError('isoNumericCode must be a 3 digit string');
     }
 
-    debug('before:set:isoNumericCode = %s', value);
     isoNumericCode = value || undefined;
-    debug('after:set:isoNumericCode = %s', value);
 
     return this;
   };
@@ -115,14 +98,10 @@ const Country = function(opt = {}) {
     debug('call:setPostalCodeRegEx(%o)', value);
 
     if (value != null && !(value instanceof RegExp)) {
-      debug('error:postalCodeRegEx = %o', value);
-
       throw new TypeError('postalCodeRegEx must be a RegExp');
     }
 
-    debug('before:set:postalCodeRegEx = %o', postalCodeRegEx);
     postalCodeRegEx = value;
-    debug('after:set:postalCodeRegEx = %o', postalCodeRegEx);
 
     return this;
   };
@@ -159,14 +138,11 @@ const Country = function(opt = {}) {
     debug('call:addCallingCode(%o)', args);
     args = sanitizeCallingCode(...args);
 
-    debug('before:add:callingCode = %o', callingCode);
     if (args == null) {
       callingCode = args;
     } else if (args.length) {
       callingCode = _.union(callingCode, args);
     }
-
-    debug('after:add:callingCode = %o', callingCode);
 
     return this;
   };
@@ -174,22 +150,17 @@ const Country = function(opt = {}) {
   const removeCallingCode = (...args) => {
     debug('call:removeCallingCode(%o)', args);
     args = sanitizeCallingCode(...args);
-
-    debug('before:remove:callingCode = %o', callingCode);
     callingCode = _.without(callingCode, ...args);
 
     if (!callingCode.length) {
       callingCode = undefined;
     }
 
-    debug('after:remove:callingCode = %o', callingCode);
-
     return this;
   };
 
   const setCallingCode = (...args) => {
     debug('call:setCallingCode(%o)', args);
-    debug('before:reset:callingCode = %o', callingCode);
     callingCode = undefined;
 
     this.addCallingCode(...args);
@@ -209,8 +180,6 @@ const Country = function(opt = {}) {
 
     // Check for null or undefined to set the callingCode
     if (args.length < 2 && _.first(args) == null) {
-      debug('sanitized:callingCode = %o', _.first(args));
-
       return _.first(args);
     }
 
@@ -221,15 +190,11 @@ const Country = function(opt = {}) {
         .replace(/\s+/, ' ');
 
       if (!/^\+[1-9][\s\d]*$/.test(value)) {
-        debug('error:callingCode = %o', value);
-
         throw new TypeError('callingCode must be digits with optional space');
       }
 
       return value;
     });
-
-    debug('sanitized:callingCode = %o', args);
 
     return args;
   };
@@ -394,8 +359,6 @@ Country.getByIso2Code = (value) => {
     iso2Code: value,
   });
 
-  debug('db:found %o', value);
-
   return (value && new Country(value)) || false;
 }; // end Country.getByIso2Code
 
@@ -407,8 +370,6 @@ Country.getByIso3Code = (value) => {
     iso3Code: value,
   });
 
-  debug('db:found %o', value);
-
   return (value && new Country(value)) || false;
 }; // end Country.getByIso3Code
 
@@ -419,8 +380,6 @@ Country.getByIsoNumericCode = (value) => {
   value = _.findWhere(countries, {
     isoNumericCode: value,
   });
-
-  debug('db:found %o', value);
 
   return (value && new Country(value)) || false;
 }; // end Country.getByIsoNumericCode
@@ -441,8 +400,6 @@ Country.getByPostalCode = (value) => {
     return false;
   });
 
-  debug('db:found %o', filtered);
-
   return (filtered && filtered.length && _.map(filtered, Country)) || false;
 }; // end Country.getByPostalCode
 
@@ -453,8 +410,6 @@ Country.getByCallingCode = (value) => {
   const filtered = _.filter(countries, (country) => {
     return new Country(country).hasCallingCode(value);
   });
-
-  debug('db:found %o', filtered);
 
   return (filtered && filtered.length && _.map(filtered, Country)) || false;
 }; // end Country.getByCallingCode
