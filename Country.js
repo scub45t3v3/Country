@@ -138,7 +138,7 @@ const Country = function(opt = {}) {
     value = _.first(sanitizeCallingCode(value));
 
     return (value == null && callingCode == null)
-        || _.contains(callingCode, value);
+      || _.contains(callingCode, value);
   };
 
   const hasAnyCallingCodes = (...args) => {
@@ -256,7 +256,7 @@ const Country = function(opt = {}) {
     debug('call:isValidPostalCode(%o)', value);
 
     return (this.postalCodeRegEx == null && value == null)
-        || (this.postalCodeRegEx && this.postalCodeRegEx.test(value));
+      || (this.postalCodeRegEx && this.postalCodeRegEx.test(value));
   };
 
   Object.defineProperties(this, {
