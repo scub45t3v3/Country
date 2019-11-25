@@ -6,11 +6,8 @@ const debug = require('debug')('Country');
 const {version} = require('./package');
 const countries = require('./countries');
 
-// Country class definition
 const Country = function(opt = {}) {
   debug('call:Country(%o)', opt);
-
-  // define auto instantiation
   if (!new.target) {
     return new Country(opt);
   }
@@ -29,13 +26,13 @@ const Country = function(opt = {}) {
     name = value || undefined;
 
     return this;
-  };
+  }; // end setName
 
   const getName = () => {
     debug('call:getName()');
 
     return name;
-  };
+  }; // end getName
 
   const setIso2Code = (value) => {
     debug('call:setIso2Code(%o)', value);
@@ -48,13 +45,13 @@ const Country = function(opt = {}) {
     iso2Code = value || undefined;
 
     return this;
-  };
+  }; // end setIso2Code
 
   const getIso2Code = () => {
     debug('call:getIso2Code()');
 
     return iso2Code;
-  };
+  }; // end getIso2Code
 
   const setIso3Code = (value) => {
     debug('call:setIso3Code(%o)', value);
@@ -67,13 +64,13 @@ const Country = function(opt = {}) {
     iso3Code = value || undefined;
 
     return this;
-  };
+  }; // end setIso3Code
 
   const getIso3Code = () => {
     debug('call:getIso3Code()');
 
     return iso3Code;
-  };
+  }; // end getIso3Code
 
   const setIsoNumericCode = (value) => {
     debug('call:setIsoNumericCode(%o)', value);
@@ -86,13 +83,13 @@ const Country = function(opt = {}) {
     isoNumericCode = value || undefined;
 
     return this;
-  };
+  }; // end setIsoNumericCode
 
   const getIsoNumericCode = () => {
     debug('call:getIsoNumericCode()');
 
     return isoNumericCode;
-  };
+  }; // end getIsoNumericCode
 
   const setPostalCodeRegEx = (value) => {
     debug('call:setPostalCodeRegEx(%o)', value);
@@ -104,13 +101,13 @@ const Country = function(opt = {}) {
     postalCodeRegEx = value;
 
     return this;
-  };
+  }; // end setPostalCodeRegEx
 
   const getPostalCodeRegEx = () => {
     debug('call:getPostalCodeRegEx()');
 
     return postalCodeRegEx;
-  };
+  }; // end getPostalCodeRegEx
 
   const hasCallingCode = (value) => {
     debug('call:hasCallingCode(%o)', value);
@@ -118,21 +115,21 @@ const Country = function(opt = {}) {
 
     return (value == null && callingCode == null)
       || _.contains(callingCode, value);
-  };
+  }; // end hasCallingCode
 
   const hasAnyCallingCodes = (...args) => {
     debug('call:hasAnyCallingCodes(%o)', args);
     args = sanitizeCallingCode(...args);
 
     return _.any(args, hasCallingCode);
-  };
+  }; // end hasAnyCallingCodes
 
   const hasAllCallingCodes = (...args) => {
     debug('call:hasAllCallingCodes(%o)', args);
     args = sanitizeCallingCode(...args);
 
     return _.all(args, hasCallingCode);
-  };
+  }; // end hasAllCallingCodes
 
   const addCallingCode = (...args) => {
     debug('call:addCallingCode(%o)', args);
@@ -145,7 +142,7 @@ const Country = function(opt = {}) {
     }
 
     return this;
-  };
+  }; // end addCallingCode
 
   const removeCallingCode = (...args) => {
     debug('call:removeCallingCode(%o)', args);
@@ -157,7 +154,7 @@ const Country = function(opt = {}) {
     }
 
     return this;
-  };
+  }; // end removeCallingCode
 
   const setCallingCode = (...args) => {
     debug('call:setCallingCode(%o)', args);
@@ -166,13 +163,13 @@ const Country = function(opt = {}) {
     this.addCallingCode(...args);
 
     return this;
-  };
+  }; // end setCallingCode
 
   const getCallingCode = () => {
     debug('call:getCallingCode()');
 
     return _.clone(callingCode);
-  };
+  }; // end getCallingCode
 
   const sanitizeCallingCode = (...args) => {
     debug('call:sanitizeCallingCode(%o)', args);
@@ -197,32 +194,30 @@ const Country = function(opt = {}) {
     });
 
     return args;
-  };
+  }; // end sanitizeCallingCode
 
   const set = (opt = {}) => {
     debug('call:set(%o)', opt);
-
     for (const key in opt) {
       this[key] = opt[key];
     }
 
     return this;
-  };
+  }; // end set
 
   const get = (...args) => {
     debug('call:get(%o)', args);
-
     args = _.flatten(args);
 
     return _.pick(this, ...args);
-  };
+  }; // end get
 
   const isValidPostalCode = (value) => {
     debug('call:isValidPostalCode(%o)', value);
 
     return (this.postalCodeRegEx == null && value == null)
       || (this.postalCodeRegEx && this.postalCodeRegEx.test(value));
-  };
+  }; // end isValidPostalCode
 
   Object.defineProperties(this, {
     VERSION: {
@@ -349,12 +344,11 @@ const Country = function(opt = {}) {
   Object.freeze(this);
 
   return this.set(opt);
-};
+}; // end Country class definition
 
-// static getByIso2Code method
+// static methods
 Country.getByIso2Code = (value) => {
   debug('call:Country.getByIso2Code(%o)', value);
-
   value = _.findWhere(countries, {
     iso2Code: value,
   });
@@ -362,10 +356,8 @@ Country.getByIso2Code = (value) => {
   return (value && new Country(value)) || false;
 }; // end Country.getByIso2Code
 
-// static getByIso3Code method
 Country.getByIso3Code = (value) => {
   debug('call:Country.getByIso3Code(%o)', value);
-
   value = _.findWhere(countries, {
     iso3Code: value,
   });
@@ -373,10 +365,8 @@ Country.getByIso3Code = (value) => {
   return (value && new Country(value)) || false;
 }; // end Country.getByIso3Code
 
-// static getByIsoNumericCode method
 Country.getByIsoNumericCode = (value) => {
   debug('call:Country.getByIsoNumericCode(%o)', value);
-
   value = _.findWhere(countries, {
     isoNumericCode: value,
   });
@@ -384,10 +374,8 @@ Country.getByIsoNumericCode = (value) => {
   return (value && new Country(value)) || false;
 }; // end Country.getByIsoNumericCode
 
-// static getByCallingCode method
 Country.getByPostalCode = (value) => {
   debug('call:Country.getByPostalCode(%o)', value);
-
   const filtered = _.filter(countries, (country) => {
     if (value == null && country.postalCodeRegEx == null) {
       return true;
@@ -403,10 +391,8 @@ Country.getByPostalCode = (value) => {
   return (filtered && filtered.length && _.map(filtered, Country)) || false;
 }; // end Country.getByPostalCode
 
-// static getByCallingCode method
 Country.getByCallingCode = (value) => {
   debug('call:Country.getByCallingCode(%o)', value);
-
   const filtered = _.filter(countries, (country) => {
     return new Country(country).hasCallingCode(value);
   });
