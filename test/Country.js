@@ -473,7 +473,7 @@ describe('Country', () => {
       unit
         .given(test.postalCodeRegEx = /^a34$/)
         .regexp(test.postalCodeRegEx)
-        .given(test.postalCodeRegEx = new RegExp('555'))
+        .given(test.postalCodeRegEx = new RegExp('555')) // eslint-disable-line prefer-regex-literals
         .regexp(test.postalCodeRegEx);
     }); // end it
 
