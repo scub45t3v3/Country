@@ -214,8 +214,8 @@ describe('Country', () => {
       unit
         .error(() => {
           test.name = {
-            toString: false,
             nope: true,
+            toString: false,
           };
         });
     }); // end it
@@ -873,8 +873,8 @@ describe('Country', () => {
     it('should accept an obejct literal and set the properties defined', () => {
       const test = new Country();
       const opt = {
-        name: 'test',
         iso2Code: 'TT',
+        name: 'test',
         postalCodeRegEx: /^a$/iu,
       };
 

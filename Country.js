@@ -196,6 +196,13 @@ const Country = function(opt = {}) {
     return args;
   }; // end sanitizeCallingCode
 
+  const isValidPostalCode = (value) => {
+    debug('call:isValidPostalCode(%o)', value);
+
+    return (this.postalCodeRegEx == null && value == null)
+      || (this.postalCodeRegEx && this.postalCodeRegEx.test(value));
+  }; // end isValidPostalCode
+
   const set = (opt = {}) => {
     debug('call:set(%o)', opt);
     for (const key in opt) {
@@ -212,18 +219,11 @@ const Country = function(opt = {}) {
     return _.pick(this, ...args);
   }; // end get
 
-  const isValidPostalCode = (value) => {
-    debug('call:isValidPostalCode(%o)', value);
-
-    return (this.postalCodeRegEx == null && value == null)
-      || (this.postalCodeRegEx && this.postalCodeRegEx.test(value));
-  }; // end isValidPostalCode
-
   Object.defineProperties(this, {
     VERSION: {
       enumerable: false,
-      writable: false,
       value: version,
+      writable: false,
     },
     name: {
       enumerable: true,
@@ -231,12 +231,12 @@ const Country = function(opt = {}) {
       set: setName,
     },
     getName: {
-      writable: false,
       value: getName,
+      writable: false,
     },
     setName: {
-      writable: false,
       value: setName,
+      writable: false,
     },
     iso2Code: {
       enumerable: true,
@@ -244,12 +244,12 @@ const Country = function(opt = {}) {
       set: setIso2Code,
     },
     getIso2Code: {
-      writable: false,
       value: getIso2Code,
+      writable: false,
     },
     setIso2Code: {
-      writable: false,
       value: setIso2Code,
+      writable: false,
     },
     iso3Code: {
       enumerable: true,
@@ -257,12 +257,12 @@ const Country = function(opt = {}) {
       set: setIso3Code,
     },
     getIso3Code: {
-      writable: false,
       value: getIso3Code,
+      writable: false,
     },
     setIso3Code: {
-      writable: false,
       value: setIso3Code,
+      writable: false,
     },
     isoNumericCode: {
       enumerable: true,
@@ -270,12 +270,12 @@ const Country = function(opt = {}) {
       set: setIsoNumericCode,
     },
     getIsoNumericCode: {
-      writable: false,
       value: getIsoNumericCode,
+      writable: false,
     },
     setIsoNumericCode: {
-      writable: false,
       value: setIsoNumericCode,
+      writable: false,
     },
     postalCodeRegEx: {
       enumerable: false,
@@ -283,12 +283,12 @@ const Country = function(opt = {}) {
       set: setPostalCodeRegEx,
     },
     getPostalCodeRegEx: {
-      writable: false,
       value: getPostalCodeRegEx,
+      writable: false,
     },
     setPostalCodeRegEx: {
-      writable: false,
       value: setPostalCodeRegEx,
+      writable: false,
     },
     callingCode: {
       enumerable: true,
@@ -296,48 +296,48 @@ const Country = function(opt = {}) {
       set: setCallingCode,
     },
     getCallingCode: {
-      writable: false,
       value: getCallingCode,
+      writable: false,
     },
     setCallingCode: {
-      writable: false,
       value: setCallingCode,
+      writable: false,
     },
     addCallingCode: {
-      writable: false,
       value: addCallingCode,
+      writable: false,
     },
     removeCallingCode: {
-      writable: false,
       value: removeCallingCode,
+      writable: false,
     },
     hasCallingCode: {
-      writable: false,
       value: hasCallingCode,
+      writable: false,
     },
     hasAnyCallingCodes: {
-      writable: false,
       value: hasAnyCallingCodes,
+      writable: false,
     },
     hasAllCallingCodes: {
-      writable: false,
       value: hasAllCallingCodes,
-    },
-    get: {
       writable: false,
-      value: get,
-    },
-    set: {
-      writable: false,
-      value: set,
     },
     isValidPostalCode: {
-      writable: false,
       value: isValidPostalCode,
+      writable: false,
+    },
+    get: {
+      value: get,
+      writable: false,
+    },
+    set: {
+      value: set,
+      writable: false,
     },
     [Symbol.toStringTag]: {
-      writable: false,
       value: '@scuba-squad/country',
+      writable: false,
     },
   });
 

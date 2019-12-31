@@ -268,8 +268,8 @@ const test = new Country();
 unit
   .error(() => {
     test.name = {
-      toString: false,
       nope: true,
+      toString: false,
     };
   });
 ```
@@ -966,8 +966,8 @@ should accept an obejct literal and set the properties defined.
 ```js
 const test = new Country();
 const opt = {
-  name: 'test',
   iso2Code: 'TT',
+  name: 'test',
   postalCodeRegEx: /^a$/iu,
 };
 unit
