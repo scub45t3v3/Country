@@ -789,6 +789,19 @@ unit
   .function(test.hasCallingCode);
 ```
 
+should return true for null|undefined when callingCode is not set.
+
+```js
+const test = new Country();
+unit
+  .bool(test.hasCallingCode())
+  .isTrue()
+  .bool(test.hasCallingCode(undefined))
+  .isTrue()
+  .bool(test.hasCallingCode(null))
+  .isTrue();
+```
+
 should return true for calling codes already in the array.
 
 ```js

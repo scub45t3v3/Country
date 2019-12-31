@@ -706,6 +706,18 @@ describe('Country', () => {
         .function(test.hasCallingCode);
     }); // end it
 
+    it('should return true for null|undefined when callingCode is not set', () => {
+      const test = new Country();
+
+      unit
+        .bool(test.hasCallingCode())
+        .isTrue()
+        .bool(test.hasCallingCode(undefined))
+        .isTrue()
+        .bool(test.hasCallingCode(null))
+        .isTrue();
+    }); // end it
+
     it('should return true for calling codes already in the array', () => {
       const test = new Country();
 
