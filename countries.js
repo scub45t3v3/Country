@@ -5,7 +5,7 @@ const db = require('@scuba-squad/country-db');
 
 const countries = db.map((country) => {
   if (country.postalCodeRegEx) {
-    country.postalCodeRegEx = new RegExp(`^${country.postalCodeRegEx}$`, 'i');
+    country.postalCodeRegEx = new RegExp(`^${country.postalCodeRegEx}$`, 'iu');
   }
 
   return country;

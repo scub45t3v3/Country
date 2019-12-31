@@ -204,7 +204,7 @@ describe('Country', () => {
         .string(test.name)
         .given(test.name = new Date())
         .string(test.name)
-        .given(test.name = /a/i)
+        .given(test.name = /a/iu)
         .string(test.name);
     }); // end it
 
@@ -471,9 +471,9 @@ describe('Country', () => {
       const test = new Country();
 
       unit
-        .given(test.postalCodeRegEx = /^a34$/)
+        .given(test.postalCodeRegEx = /^a34$/u)
         .regexp(test.postalCodeRegEx)
-        .given(test.postalCodeRegEx = new RegExp('555')) // eslint-disable-line prefer-regex-literals
+        .given(test.postalCodeRegEx = new RegExp('555', 'u')) // eslint-disable-line prefer-regex-literals
         .regexp(test.postalCodeRegEx);
     }); // end it
 
@@ -518,10 +518,10 @@ describe('Country', () => {
 
       unit
         .error(() => {
-          test.postalCodeRegEx = [/34/, '45', 76];
+          test.postalCodeRegEx = [/34/u, '45', 76];
         })
         .error(() => {
-          test.postalCodeRegEx = [/34/];
+          test.postalCodeRegEx = [/34/u];
         })
         .error(() => {
           test.postalCodeRegEx = ['45'];
@@ -538,7 +538,7 @@ describe('Country', () => {
         .error(() => {
           test.postalCodeRegEx = {
             a: '5',
-            b: /45/,
+            b: /45/u,
             c: [56, 78],
             d: 5.5,
             e: 3,
@@ -546,7 +546,7 @@ describe('Country', () => {
         })
         .error(() => {
           test.postalCodeRegEx = {
-            a: /45/,
+            a: /45/u,
           };
         })
         .error(() => {
@@ -875,7 +875,7 @@ describe('Country', () => {
       const opt = {
         name: 'test',
         iso2Code: 'TT',
-        postalCodeRegEx: /^a$/i,
+        postalCodeRegEx: /^a$/iu,
       };
 
       unit

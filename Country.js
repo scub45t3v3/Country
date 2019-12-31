@@ -38,7 +38,7 @@ const Country = function(opt = {}) {
     debug('call:setIso2Code(%o)', value);
     value = value && `${value}`.trim().toUpperCase();
 
-    if ((value != null) && !/^[a-z]{2}$/i.test(value)) {
+    if ((value != null) && !/^[a-z]{2}$/iu.test(value)) {
       throw new TypeError('iso2Code must be 2 char alpha string');
     }
 
@@ -57,7 +57,7 @@ const Country = function(opt = {}) {
     debug('call:setIso3Code(%o)', value);
     value = value && `${value}`.trim().toUpperCase();
 
-    if ((value != null) && !/^[a-z]{3}$/i.test(value)) {
+    if ((value != null) && !/^[a-z]{3}$/iu.test(value)) {
       throw new TypeError('iso3Code must be 3 char alpha string');
     }
 
@@ -76,7 +76,7 @@ const Country = function(opt = {}) {
     debug('call:setIsoNumericCode(%o)', value);
     value = value && `${value}`.trim();
 
-    if (value != null && value != '000' && !/^\d{3}$/.test(value)) {
+    if (value != null && value != '000' && !/^\d{3}$/u.test(value)) {
       throw new TypeError('isoNumericCode must be a 3 digit string');
     }
 
@@ -183,10 +183,10 @@ const Country = function(opt = {}) {
     args = _.map(args, (value) => {
       value = (value && `${value}`.trim()) || '';
       value = value
-        .replace(/^\+*\s*/, '+')
-        .replace(/\s+/, ' ');
+        .replace(/^\+*\s*/u, '+')
+        .replace(/\s+/u, ' ');
 
-      if (!/^\+[1-9][\s\d]*$/.test(value)) {
+      if (!/^\+[1-9][\s\d]*$/u.test(value)) {
         throw new TypeError('callingCode must be digits with optional space');
       }
 
