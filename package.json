@@ -3,7 +3,9 @@
   "description": "Country class definition",
   "version": "2.0.4",
   "public": true,
+  "type": "module",
   "main": "Country.js",
+  "types": "Country.d.ts",
   "license": "MIT",
   "author": {
     "name": "Steve Winberg",
@@ -21,30 +23,28 @@
     "validate"
   ],
   "scripts": {
-    "build": "grunt",
+    "build": "npm run lint",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
-    "lint": "grunt eslint",
-    "pretest": "grunt",
+    "lint": "npx eslint ./",
+    "pretest": "npm run build",
     "test": "nyc --reporter=html --reporter=text --reporter=lcov mocha test",
     "posttest": "mocha --reporter=markdown > TEST.md",
     "preversion": "npm test"
   },
   "engines": {
-    "node": ">= 10"
+    "node": ">= 12"
   },
   "devDependencies": {
     "coveralls": "^3.0.0",
-    "eslint": "^6.8.0",
+    "eslint": "^7.16.0",
     "eslint-config-scuba-squad": "^2.0.0",
-    "grunt": "^1.0.0",
-    "grunt-eslint": "^22.0.0",
-    "mocha": "^8.0.0",
+    "mocha": "^8.2.1",
     "nyc": "^15.0.0",
     "unit.js": "^2.1.1"
   },
   "dependencies": {
     "@scuba-squad/country-db": "^1.0.0",
-    "debug": "^4.1.1",
-    "underscore": "^1.9.0"
+    "debug": "^4.3.1",
+    "underscore": "^1.12.0"
   }
 }

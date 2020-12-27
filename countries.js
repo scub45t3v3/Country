@@ -1,6 +1,7 @@
-'use strict';
-
 // include dependencies
+import {createRequire} from 'module';
+
+const require = createRequire(import.meta.url);
 const db = require('@scuba-squad/country-db');
 
 const countries = db.map((country) => {
@@ -11,5 +12,5 @@ const countries = db.map((country) => {
   return country;
 });
 
-// export as commonjs module
-module.exports = countries;
+// export as js module
+export {countries as default};

@@ -1,8 +1,6 @@
-'use strict';
-
 // include dependencies
-const unit = require('unit.js');
-const countries = require('../countries');
+import unit from 'unit.js';
+import countries from '../countries.js';
 
 // describe countries
 describe('countries', () => {

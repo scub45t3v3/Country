@@ -1,10 +1,12 @@
-'use strict';
-
 // include dependecies
-const _ = require('underscore');
-const debug = require('debug')('Country');
+import _ from 'underscore';
+import createDebug from 'debug';
+import countries from './countries.js';
+import {createRequire} from 'module';
+
+const require = createRequire(import.meta.url);
 const {version} = require('./package');
-const countries = require('./countries');
+const debug = createDebug('@scuba-squad:Country');
 
 const Country = function(opt = {}) {
   debug('call:Country(%o)', opt);
@@ -400,5 +402,5 @@ Country.getByCallingCode = (value) => {
   return (filtered && filtered.length && _.map(filtered, Country)) || false;
 }; // end Country.getByCallingCode
 
-// export Country as a commonjs module
-module.exports = Country;
+// export Country as js module
+export {Country as default};

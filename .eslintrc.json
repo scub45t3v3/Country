@@ -1,3 +1,7 @@
 {
-  "extends": "scuba-squad"
+  "extends": "scuba-squad",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  }
 }

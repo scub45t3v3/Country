@@ -1,8 +1,9 @@
-'use strict';
-
 // include dependencies
-const unit = require('unit.js');
-const Country = require('../Country');
+import unit from 'unit.js';
+import Country from '../Country.js';
+import {createRequire} from 'module';
+
+const require = createRequire(import.meta.url);
 const {version} = require('../package');
 
 // describe Country
