@@ -4,6 +4,7 @@
   "version": "2.0.7",
   "public": true,
   "main": "Country.js",
+  "types": "Country.d.ts",
   "license": "MIT",
   "author": {
     "name": "Steve Winberg",
